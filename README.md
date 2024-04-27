@@ -13,6 +13,7 @@ bash -c "$(wget -qO - 'https://asharirhmn.com/ashrwrt')"
 ## Tools
 | Nama Tools  | Penjelasan | Ideation/Development | Rilis | Dokumentasi | 
 | ------------- | ------------- | ------------- | ------------- | :-------------:|
+| YTDL      | Unduh Youtube Video langsung dari OpenWRT. | 27 April 2024 | 27 April 2024 | [disini](https://github.com/letsgetwork/WRT/tree/main/YTDL)
 | BugHunter      | Mendapatkan/mengecek bug via terminal. | 24 April 2024 | 27 April 2024 | [disini](https://github.com/letsgetwork/WRT/tree/main/BugHunter)
 | Freeless 🇮🇩 | Config gratis mode vless di OpenClash OpenWRT, unlimited, no limit time. | 27 April 2024 | 27 April 2024 | [disini](https://github.com/letsgetwork/WRT/tree/main/Freeless)
 
