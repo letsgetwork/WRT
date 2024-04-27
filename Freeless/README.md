@@ -13,4 +13,4 @@ Setelah berhasil unduh, silahkan cek pada aplikasi OpenClash lalu pilih **Freele
 
 ✅ Tested/work pada **OpenClash v0.45.164-beta**
 
-✅ Config tersedia mode WS: ** Si biru (vidio, vision, xcp) & Si merah (Ilped)**
+✅ Config tersedia mode WS: **Si biru (vidio, vision, xcp) & Si merah (Ilped)**
