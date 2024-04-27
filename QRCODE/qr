@@ -30,8 +30,9 @@ qr() {
 ==========================================================================
 
 MENJALANKAN PERINTAH
-ketik 'qr' (tanda tanda petik) kemudian di text/url yang ingin dibuat QR code nya.
-Contoh:  qr shopee.co.id
+ketik 'qr' (tanda tanda petik) kemudian tulis text/url yang ingin dibuat QR code nya. Jika text digenerate lebih dari 1 kata (berupa kalimat) gunakan ''
+Contoh 1 kata:  qr shopee.co.id
+Contoh >1 kata/kalimat:  qr 'burung kutilang berbunyi dan menari-nari diatas pohon cemara'
 
 "
         return 1
