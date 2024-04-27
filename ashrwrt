@@ -13,17 +13,20 @@ Tools tersedia:
 1. BugHunter
 2. Freeless
 3. YTDL
+4. QRCODE
 
 UNDUH/UPDATE
 Ketik ashrwrt 1 : Untuk mengunduh/update tools Bughunter
-Ketik ashrwrt 2 : Untuk mengunduh /update tools Freeless
-Ketik ashrwrt 3 : Untuk mengunduh /update tools YTDL
+Ketik ashrwrt 2 : Untuk mengunduh/update tools Freeless
+Ketik ashrwrt 3 : Untuk mengunduh/update tools YTDL
+Ketik ashrwrt 4 : Untuk mengunduh/update tools QRCODE
 Ketik ashrwrt all : Untuk mengunduh/update keseluruhan tools
 
 
 MENJALANKAN PERINTAH SETELAH BERHASIL.
 BugHunter: ketik 'bug' (tanda tanda petik) pada terminal untuk melihat perintah.
 YTDL: ketik 'ytdl' (tanda tanda petik) pada terminal untuk melihat perintah.
+QRCODE: ketik 'qr' (tanda tanda petik) pada terminal untuk melihat perintah.
 
 
 "
@@ -43,6 +46,8 @@ elif [ "$1" = "all" ]; then  # Fixed the condition to check the first argument
     bash -c "$(wget -qO - 'https://asharirhmn.com/freeless')" && 
     sleep 3 &&
     bash -c "$(wget -qO - 'https://github.com/letsgetwork/WRT/raw/main/YTDL/setup.sh')"
+    sleep 4 $$
+    bash -c "$(wget -qO - 'https://github.com/letsgetwork/WRT/raw/main/QRCODE/setup.sh')"
 else
     echo "Perintah tidak dikenali."
     exit 1
