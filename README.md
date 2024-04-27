@@ -7,7 +7,7 @@ Copy & paste command berikut
 ### `bash -c "$(wget -qO - 'https://asharirhmn.com/ashrwrt')"`
 
 ------------------------------
-### Tools
+## Tools
 ### BugHunter : Mendapatkan/mengecek bug via terminal. Baca [disini](https://github.com/letsgetwork/WRT/tree/main/BugHunter)
 
 ### Freeless 🇮🇩 : Config gratis mode vless di OpenClash OpenWRT, unlimited, no limit time. Baca [disini](https://github.com/letsgetwork/WRT/tree/main/Freeless)
