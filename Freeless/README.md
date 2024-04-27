@@ -5,8 +5,9 @@ Freeless adalah config gratis Vless untuk kamu user OpenWRT terkhusus pengguna O
 ## UNDUH VIA TERMINAL
 Copy & paste command berikut
 
-### `bash -c "$(wget -qO - 'https://asharirhmn.com/freeless')"`
-
+```
+bash -c "$(wget -qO - 'https://asharirhmn.com/freeless')"
+```
 
 Setelah berhasil unduh, silahkan cek pada aplikasi OpenClash lalu pilih **Freeless**.
 
