@@ -11,6 +11,7 @@ finish(){
     echo "Ketik qr untuk mulai aplikasi"
     echo ""
     echo ""
+    sleep 3
 }
 
 download_files()
