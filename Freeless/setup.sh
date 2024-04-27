@@ -26,8 +26,7 @@ download_files()
 }
 
 echo ""
-echo "Freeless by @asharirhmn // 
-Baca update dokumentasi disini https://shorturl.at/kCVZ9"
+echo "Freeless by @asharirhmn // Baca update dokumentasi disini https://shorturl.at/kCVZ9"
 echo ""
 
 
