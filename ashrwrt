@@ -48,7 +48,7 @@ elif [ "$1" = "all" ]; then  # Fixed the condition to check the first argument
     bash -c "$(wget -qO - 'https://asharirhmn.com/freeless')" && 
     sleep 3 &&
     bash -c "$(wget -qO - 'https://github.com/letsgetwork/WRT/raw/main/YTDL/setup.sh')"
-    sleep 3 $$
+    sleep 3 &&
     bash -c "$(wget -qO - 'https://github.com/letsgetwork/WRT/raw/main/QRCODE/setup.sh')"
 else
     echo "Perintah tidak dikenali."
