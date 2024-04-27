@@ -21,7 +21,7 @@ download_files()
 {
     	clear
   	echo "Mengunduh config... mohon tunggu"
-   	wget -O $DIR/Freeless.yaml https://raw.githubusercontent.com/letsgetwork/WRT/main/Freeless/FreelessB.yaml && chmod +x $DIR/Freeless.yaml
+   	wget -O $DIR/Freeless.yaml https://raw.githubusercontent.com/letsgetwork/WRT/main/Freeless/Freeless.yaml && chmod +x $DIR/Freeless.yaml
     	finish
 }
 
