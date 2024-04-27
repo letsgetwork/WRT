@@ -22,7 +22,18 @@ generate_qr_text() {
 # Function to prompt user and generate QR code
 qr() {
     if [ -z "$1" ]; then
-        echo "Usage: qr <text>"
+        echo "
+
+=========================================================================
+  ####### QRCODE GENERATOR BY  @ASHARIRHMN #######
+  Generate QRCODE via Terminal OpenWRT 😍
+==========================================================================
+
+MENJALANKAN PERINTAH
+ketik 'qr' (tanda tanda petik) kemudian di text/url yang ingin dibuat QR code nya.
+Contoh:  qr shopee.co.id
+
+"
         return 1
     fi
     
@@ -31,3 +42,4 @@ qr() {
 
 # Call the qr function with the provided argument
 qr "$@"
+
