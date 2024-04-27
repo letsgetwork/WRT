@@ -1,0 +1,135 @@
+#!/bin/sh
+# Script by @ASHARIRHMN
+
+# Check if user provided YouTube URL as an argument
+if [ $# -eq 0 ]; then
+    echo "
+
+=========================================================================
+  ####### YTDL BY  @ASHARIRHMN #######
+  Unduh Youtube Video via Terminal OpenWRT 😍
+==========================================================================
+
+MENJALANKAN PERINTAH
+ketik 'ytdl' (tanda tanda petik) kemudian di ikuti Youtube Video URL.
+Contoh:  ytdl https://www.youtube.com/watch?v=m0Oa75NWwdY
+
+"
+    exit 1
+fi
+
+# Function to install xmllint if not available
+install_xmllint() {
+    if ! command -v xmllint &> /dev/null; then
+        echo "Installing xmllint..."
+        opkg update
+        opkg install libxml2-utils
+        echo "xmllint installed."
+    else
+        echo "xmllint is already installed."
+    fi
+}
+
+# Function to uninstall xmllint
+uninstall_xmllint() {
+    echo "Removing xmllint..."
+    opkg remove libxml2-utils
+    echo "xmllint removed."
+}
+
+# Function to extract video ID from URL
+extract_video_id() {
+    # Extract the video ID from the URL
+    video_url="$1"
+    video_id=$(echo "$video_url" | sed -n 's/.*v=\([^&]*\).*/\1/p')
+    echo "$video_id"
+}
+
+# Function to construct the URL
+construct_url() {
+    unique_id="$1"
+    url="https://direct-link.vercel.app/video/$unique_id"
+    echo "$url"
+}
+
+# Function to extract direct video link
+extract_direct_video_link() {
+    url="$1"
+    direct_link=$(curl -s "$url" | xmllint --html --xpath 'string(//video/@src)' - 2>/dev/null)
+    echo "$direct_link"
+}
+
+# Function to fetch video title
+fetch_video_title() {
+    url="$1"
+    title=$(curl -s "$url" | xmllint --html --xpath 'string(//*[@id="__next"]/div/div/main/article/h1)' - 2>/dev/null)
+    echo "$title"
+}
+
+# Function to download video using wget
+download_video() {
+    video_url="$1"
+    echo "Video sedang di unduh ..."
+    wget --quiet --show-progress --progress=bar:force:noscroll -P "/root/YTDL" "$video_url"
+    if [ $? -eq 0 ]; then
+        echo "Video berhasil di unduh!"
+    else
+        echo "Gagal mengunduh video."
+    fi
+}
+
+# Function to rename video file
+rename_video() {
+    title="$1"
+    # Truncate title to a reasonable length
+    truncated_title=$(echo "$title" | sed 's/[\\/:*?"<>|]//g' | cut -c 1-100)  # Adjust 100 as needed
+    formatted_title="${truncated_title} - by YTDL @asharirhmn.mp4"
+    original_file=$(ls /root/YTDL | grep '^videoplayback?expire=.*$')
+    if [ -n "$original_file" ]; then
+        mv "/root/YTDL/$original_file" "/root/YTDL/$formatted_title"
+        local_url="/root/YTDL/$formatted_title"
+        echo "Nama video berhasil di ubah! Hasil unduhan silahkan cek pada file manager dengan path: $local_url"
+    else
+        echo "Tidak ada file video yang di ubah."
+    fi
+}
+
+
+
+# Extract the video URL from the command-line argument
+video_url="$1"
+
+# Extract the video ID from the URL
+video_id=$(extract_video_id "$video_url")
+
+# Construct the URL for fetching the direct link
+url=$(construct_url "$video_id")
+
+# Install xmllint if not available
+install_xmllint
+
+# Fetch the URL and wait for 3 seconds
+echo "Mohon tunggu..."
+sleep 3
+
+# Check if xmllint is still installed
+if command -v xmllint &> /dev/null; then
+    echo "xmllint is still installed."
+    # Extract direct video link
+    direct_link=$(extract_direct_video_link "$url")
+    # Fetch video title
+    video_title=$(fetch_video_title "$url")
+    # Output the direct video link if extraction is successful
+    if [ -n "$direct_link" ]; then
+        echo "Direct URL Youtube Video : $direct_link"
+        # Download the video
+        download_video "$direct_link"
+        # Rename the video file
+        rename_video "$video_title"
+    else
+        echo "Gagal mendapatkan URL Youtube Video."
+    fi
+else
+    echo "xmllint is not installed anymore."
+fi
+
