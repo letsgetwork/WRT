@@ -22,18 +22,3 @@ download_files()
 }
 
 download_files
-
-# Adding the deletion part with confirmation
-while true; do
-    read -p "Apakah Anda ingin menghapus file yang diunduh? (y/n)? " yn
-    case $yn in
-        [Yy]* ) 
-            rm -i $DIR/ashrwrt # '-i' option prompts for confirmation
-            echo "File dihapus."
-            break;;
-        [Nn]* ) 
-            echo "File tidak dihapus."
-            break;;
-        * ) echo "Jawab dengan ketik 'y' or 'n'.";;
-    esac
-done
