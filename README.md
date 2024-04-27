@@ -1,7 +1,9 @@
 # Kumpulan Hasil Belajar Otodidak OpenWRT ARI
 Gunakan ashrwrt untuk mengakses segala tools dibuat oleh ARI.
 
-## UNDUH VIA TERMINAL
+
+
+## UNDUH PACKAGE VIA TERMINAL
 Copy & paste command berikut
 
 ### `bash -c "$(wget -qO - 'https://asharirhmn.com/ashrwrt')"`
