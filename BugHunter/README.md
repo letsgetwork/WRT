@@ -1,5 +1,5 @@
 # BUG HUNTER/CHECKER BY @ASHARIRHMN
-Aplikasi untuk mengecek/mencari bug inject dengan simcard apapun melalui terminal OpenWRT
+Aplikasi untuk mengecek/mencari bug inject dengan simcard apapun melalui terminal OpenWRT.
 
 
 ## INSTALL VIA TERMINAL
