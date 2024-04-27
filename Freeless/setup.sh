@@ -27,7 +27,9 @@ download_files()
 
 echo ""
 echo "Freeless by @asharirhmn // 
-      Baca update dokumentasi disini https://shorturl.at/kCVZ9"
+Baca update dokumentasi disini https://shorturl.at/kCVZ9"
+echo ""
+
 
 while true; do
     read -p "Dokumen akan disimpan pada folder $DIR. Tetap lanjutkan? (y/n)? " yn
