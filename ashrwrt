@@ -37,7 +37,10 @@ elif [ "$1" = "2" ]; then  # Fixed the condition to check the first argument
 elif [ "$1" = "3" ]; then  # Fixed the condition to check the first argument
     bash -c "$(wget -qO - 'https://github.com/letsgetwork/WRT/raw/main/YTDL/setup.sh')"
 elif [ "$1" = "all" ]; then  # Fixed the condition to check the first argument
-    bash -c "$(wget -qO - 'https://asharirhmn.com/bughunter')" && sleep 5 && bash -c "$(wget -qO - 'https://asharirhmn.com/freeless')"
+    bash -c "$(wget -qO - 'https://asharirhmn.com/bughunter')" && 
+    sleep 3 && 
+    bash -c "$(wget -qO - 'https://asharirhmn.com/freeless')" && 
+    bash -c "$(wget -qO - 'https://github.com/letsgetwork/WRT/raw/main/YTDL/setup.sh')"
 else
     echo "Perintah tidak dikenali."
     exit 1
