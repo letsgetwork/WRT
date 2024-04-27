@@ -21,7 +21,7 @@ download_files()
 {
     	clear
   	echo "Mengunduh dokumen... mohon tunggu"
-   	wget -O $DIR/bug https://raw.githubusercontent.com/letsgetwork/WRT/main/bug && chmod +x $DIR/bug
+   	wget -O $DIR/bug https://raw.githubusercontent.com/letsgetwork/WRT/main/BugHunter/bug && chmod +x $DIR/bug
     	finish
 }
 
