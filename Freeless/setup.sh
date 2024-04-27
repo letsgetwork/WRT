@@ -1,7 +1,7 @@
 #!/bin/ash
 # Installation script by @ASHARIRHMN.
 
-DIR=/openclash/config/
+DIR=/www/tinyfm/openclash/config
 
 
 finish(){
