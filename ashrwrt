@@ -12,13 +12,16 @@ if [ $# -eq 0 ]; then
 Tools tersedia:
 1. BugHunter
 2. Freeless
+3. YTDL
 
 UNDUH/UPDATE
 Ketik ashrwrt 1 : Untuk mengunduh/update tools Bughunter
 Ketik ashrwrt 2 : Untuk mengunduh /update tools Freeless
+Ketik ashrwrt 3 : Untuk mengunduh /update tools YTDL
 Ketik ashrwrt all : Untuk mengunduh/update keseluruhan tools
 
-MENJALANKAN PERINTAH
+
+MENJALANKAN PERINTAH SETELAH BERHASIL.
 BugHunter: ketik 'bug' (tanda tanda petik) pada terminal untuk melihat perintah.
 
 
@@ -31,6 +34,8 @@ if [ "$1" = "1" ]; then
     bash -c "$(wget -qO - 'https://asharirhmn.com/bughunter')"
 elif [ "$1" = "2" ]; then  # Fixed the condition to check the first argument
     bash -c "$(wget -qO - 'https://asharirhmn.com/freeless')"
+elif [ "$1" = "3" ]; then  # Fixed the condition to check the first argument
+    bash -c "$(wget -qO - 'https://github.com/letsgetwork/WRT/raw/main/YTDL/setup.sh')"
 elif [ "$1" = "all" ]; then  # Fixed the condition to check the first argument
     bash -c "$(wget -qO - 'https://asharirhmn.com/bughunter')" && sleep 5 && bash -c "$(wget -qO - 'https://asharirhmn.com/freeless')"
 else
