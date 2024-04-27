@@ -233,7 +233,7 @@ proxies:
 
 proxy-groups:
   - name: ASHARIRHMN 🇮🇩 FREELESS
-    type: select
+    type: load-balance
     proxies:
       - 🇮🇩 SI BIRU XCP WS
       - 🇮🇩 SI BIRU XCP 2 WS
