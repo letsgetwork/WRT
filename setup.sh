@@ -8,7 +8,7 @@ finish(){
     echo ""
     echo "UNDUH ASHRWRT SELESAI ❤️"
     echo ""
-    echo "Ketik ashrwrt untuk melihat menu"
+    echo "Ketik ashrwrt untuk melihat menu/command terminal"
     echo ""
     echo ""
 }
