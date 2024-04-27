@@ -12,12 +12,11 @@ Untuk mulai mengecek bug dan/atau mencari bug IP pada host, silahkan ketik:
 bug <hostname1> <hostname2> <hostname3> <hostname4> dst
 contoh: bug quiz.vidio.com shopee.co.id
 
+✅Tested/work pada mode WS/Bolakbalik
 
 Catatan
-✅Tested/work pada mode WS/Bolakbalik
 1. Pastikan kamu memiliki kuota reguler pada simcard mu
-2. Pastikan saat mencari/menggunakan aplikasi, simcard yang kamu gunakan sesuai. 
-   Misal, kamu ingin mencari/cek bug pada si biru maka gunakan simcard si biru. 
+2. Pastikan saat mencari/menggunakan aplikasi, simcard yang kamu gunakan sesuai. Misal, kamu ingin mencari/cek bug pada si biru maka gunakan simcard si biru. 
 3. Jika menggunakan inject 0kuota, pastikan pada aplikasi tunneling mu (OPENCLASH) pada mode redir-host. Jika menggunakan fake-ip, aplikasi ini tidak bisa berjalan dengan baik.
 4. Ada pertanyaan/menemukan eror, kontak via telegram https://t.me/asharirhmn
 
