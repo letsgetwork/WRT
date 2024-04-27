@@ -1,0 +1,122 @@
+#!/bin/bash
+
+# Check if hostnames are provided as arguments
+if [ $# -eq 0 ]; then
+    echo "
+
+=========================================================================
+####### BUG CHECKER BY @ASHARIRHMN #######
+==========================================================================
+
+Untuk mulai mengecek bug dan/atau mencari bug IP pada host, silahkan ketik: 
+bug <hostname1> <hostname2> <hostname3> <hostname4> dst
+contoh: bug quiz.vidio.com shopee.co.id
+
+
+Catatan
+1. Pastikan kamu memiliki kureg pada simcard mu
+2. Jika menggunakan inject 0kuota, pastikan pada aplikasi tunneling mu (OPENCLASH) pada mode redir-host. Jika menggunakan fake-ip, aplikasi ini tidak bisa berjalan dengan baik.
+3. Ada pertanyaan, kontak via telegram https://t.me/asharirhmn
+
+"
+    exit 1
+fi
+
+# Flag to track if any ping fails
+ping_failed=false
+
+# Array to store successful Cloudflare IPs
+successful_ips=()
+
+# Function to check if an IP belongs to Cloudflare
+is_cloudflare_ip() {
+    local ip="$1"
+    # Cloudflare IP ranges
+    cloudflare_ranges=(
+        "103.21.244.0-103.21.247.255"
+        "103.22.200.0-103.22.203.255"
+        "103.31.4.0-103.31.7.255"
+        "104.16.0.0-104.23.255.255"
+        "104.24.0.0-104.27.255.255"
+        "108.162.192.0-108.162.255.255"
+        "131.0.72.0-131.0.75.255"
+        "141.101.64.0-141.101.127.255"
+        "162.158.0.0-162.159.255.255"
+        "172.64.0.0-172.71.255.255"
+        "173.245.48.0-173.245.63.255"
+        "188.114.96.0-188.114.111.255"
+        "190.93.240.0-190.93.255.255"
+        "197.234.240.0-197.234.243.255"
+        "198.41.128.0-198.41.191.255"
+    )
+    for range in "${cloudflare_ranges[@]}"; do
+        start_ip=$(echo "$range" | cut -d'-' -f1)
+        end_ip=$(echo "$range" | cut -d'-' -f2)
+        if [ "$ip" -ge "$(printf "%d\n" "$(echo "$start_ip" | awk -F'.' '{print $1 * 256^3 + $2 * 256^2 + $3 * 256 + $4}')" )" ] && [ "$ip" -le "$(printf "%d\n" "$(echo "$end_ip" | awk -F'.' '{print $1 * 256^3 + $2 * 256^2 + $3 * 256 + $4}')" )" ]; then
+            return 0
+        fi
+    done
+    return 1
+}
+
+# Function to generate hyperlink for an IP address
+generate_hyperlink() {
+    local ip="$1"
+    echo "https://check-host.cc/?m=INFO&target=$ip"
+}
+
+# Iterate over each provided hostname
+for hostname in "$@"; do
+    # Resolve the hostname to IP addresses using nslookup
+    resolved_ips=$(nslookup "$hostname" | awk '/^Address: / { print $2 }')
+
+    # Check if the hostname could be resolved
+    if [ -z "$resolved_ips" ]; then
+        echo "Failed to resolve the hostname $hostname"
+        continue
+    fi
+
+    # Iterate over each resolved IP address
+    while read -r ip; do
+        # Convert IP address to integer for comparison
+        ip_int=$(printf "%d\n" "$(echo "$ip" | awk -F'.' '{print $1 * 256^3 + $2 * 256^2 + $3 * 256 + $4}')")
+        if [ -z "$ip_int" ]; then
+            echo "Cek $hostname ($ip) ... Waiting"
+            continue
+        fi
+
+        # Check if the IP belongs to Cloudflare
+        if is_cloudflare_ip "$ip_int"; then
+            # Ping the resolved IP address
+            if ping_result=$(ping -c 4 -n "$ip" 2>/dev/null); then
+                ping_time=$(echo "$ping_result" | awk -F'/' 'END{print $5}')
+                echo "Cek $hostname ($ip) ... OK Cloudflare ✅ (Ping: $ping_time)"
+                successful_ips+=("$ip")
+            else
+                echo "Cek $hostname ($ip) ... OK Cloudflare ✅ (Ping: - ms)"
+                ping_failed=true
+            fi
+        fi
+    done <<< "$resolved_ips"
+done
+
+# Print successful IPs with hyperlinks
+if [ "${#successful_ips[@]}" -gt 0 ]; then
+    echo "Cek host IP profile disini :"
+    for ip in "${successful_ips[@]}"; do
+        hyperlink=$(generate_hyperlink "$ip")
+        echo " - $ip: $hyperlink"
+    done
+fi
+
+# Check if any ping failed
+if [ "$ping_failed" = false ]; then
+    echo "
+    ======================================================================
+    Semua host telah selesai diperiksa.
+    Jika tidak mendapatkan IP host kemungkinan besar bug tidak tersedia.
+    =======================================================================
+    "
+else
+    echo "Beberapa Bug Gagal, ulangi kembali."
+fi
