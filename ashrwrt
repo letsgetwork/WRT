@@ -21,6 +21,7 @@ Ketik ashrwrt 2 : Untuk mengunduh/update tools Freeless
 Ketik ashrwrt 3 : Untuk mengunduh/update tools YTDL
 Ketik ashrwrt 4 : Untuk mengunduh/update tools QRCODE
 Ketik ashrwrt all : Untuk mengunduh/update keseluruhan tools
+Ketik ashrwrt update : Untuk mengunduh/update ashrwrt package manager
 
 
 MENJALANKAN PERINTAH SETELAH BERHASIL.
@@ -42,6 +43,8 @@ elif [ "$1" = "3" ]; then  # Fixed the condition to check the first argument
     bash -c "$(wget -qO - 'https://github.com/letsgetwork/WRT/raw/main/YTDL/setup.sh')"
 elif [ "$1" = "4" ]; then  # Fixed the condition to check the first argument
     bash -c "$(wget -qO - 'https://github.com/letsgetwork/WRT/raw/main/QRCODE/setup.sh')"
+elif [ "$1" = "update" ]; then  # Fixed the condition to check the first argument
+    bash -c "$(wget -qO - 'https://github.com/letsgetwork/WRT/raw/main/setup.sh')"
 elif [ "$1" = "all" ]; then  # Fixed the condition to check the first argument
     bash -c "$(wget -qO - 'https://asharirhmn.com/bughunter')" && 
     sleep 3 && 
