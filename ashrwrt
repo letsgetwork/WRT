@@ -1,1 +1,35 @@
+#!/bin/bash
+# Script by @ASHARIRHMN
+
+# Check if hostnames are provided as arguments
+if [ $# -eq 0 ]; then
+    echo "
+
+=========================================================================
+  ####### ASHRWRT TOOLS @ASHARIRHMN #######
+==========================================================================
+
+Tools tersedia:
+1. BugHunter
+2. Freeless
+
+Ketik ashrwrt 1 : Untuk mengunduh/update tools Bughunter
+Ketik ashrwrt 2 : Untuk mengunduh /update tools Freeless
+Ketik ashrwrt all : Untuk mengunduh/update keseluruhan tools
+
+"
+    exit 1
+fi
+
+# Define actions for different arguments
+if [ "$1" = "1" ]; then
+    bash -c "$(wget -qO - 'https://asharirhmn.com/bughunter')"
+elif [ "$1" = "2" ]; then  # Fixed the condition to check the first argument
+    bash -c "$(wget -qO - 'https://asharirhmn.com/freeless')"
+elif [ "$1" = "all" ]; then  # Fixed the condition to check the first argument
+    bash -c "$(wget -qO - 'https://asharirhmn.com/bughunter')" && sleep 5 && bash -c "$(wget -qO - 'https://asharirhmn.com/freeless')"
+else
+    echo "Perintah tidak dikenali."
+    exit 1
+fi
 
