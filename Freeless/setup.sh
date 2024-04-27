@@ -28,13 +28,3 @@ download_files()
 echo ""
 echo "Freeless by @asharirhmn // Baca update dokumentasi disini https://shorturl.at/kCVZ9"
 echo ""
-
-
-while true; do
-    read -p "Dokumen akan disimpan pada folder $DIR. Tetap lanjutkan? (y/n)? " yn
-    case $yn in
-        [Yy]* ) download_files; break;;
-        [Nn]* ) exit;;
-        * ) echo "Jawab dengan ketik 'y' or 'n'.";;
-    esac
-done
