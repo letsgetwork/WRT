@@ -5,7 +5,9 @@ Aplikasi untuk mengecek/mencari bug inject dengan simcard apapun melalui termina
 ## INSTALL VIA TERMINAL
 Copy & paste command berikut
 
-### `bash -c "$(wget -qO - 'https://asharirhmn.com/bughunter')"`
+```
+bash -c "$(wget -qO - 'https://asharirhmn.com/bughunter')"
+```
 
 
 setelah berhasil install, silahkan ketik **bug** untuk memulai. enjoyy
