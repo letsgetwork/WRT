@@ -69,12 +69,18 @@ fetch_video_title() {
 # Function to download video using wget
 download_video() {
     video_url="$1"
-    echo "Video sedang di unduh ..."
-    wget --quiet --show-progress --progress=bar:force:noscroll -P "/root/YTDL" "$video_url"
-    if [ $? -eq 0 ]; then
-        echo "Video berhasil di unduh!"
+    echo "Apakah kamu ingin mengunduh video ini pada folder lokal? (y/n)"
+    read -r response
+    if [ "$response" = "y" ]; then
+        echo "Video sedang di unduh ..."
+        wget --quiet --show-progress --progress=bar:force:noscroll -P "/root/YTDL" "$video_url"
+        if [ $? -eq 0 ]; then
+            echo "Video berhasil di unduh!"
+        else
+            echo "Gagal mengunduh video."
+        fi
     else
-        echo "Gagal mengunduh video."
+        echo "Video tidak akan di unduh."
     fi
 }
 
