@@ -6,13 +6,15 @@ Gunakan ashrwrt untuk mengakses segala tools dibuat oleh ARI.
 ## UNDUH PACKAGE VIA TERMINAL
 Copy & paste command berikut
 
-### `bash -c "$(wget -qO - 'https://asharirhmn.com/ashrwrt')"`
+```
+bash -c "$(wget -qO - 'https://asharirhmn.com/ashrwrt')"
+```
 
-------------------------------
 ## Tools
-### BugHunter : Mendapatkan/mengecek bug via terminal. Baca [disini](https://github.com/letsgetwork/WRT/tree/main/BugHunter)
-
-### Freeless 🇮🇩 : Config gratis mode vless di OpenClash OpenWRT, unlimited, no limit time. Baca [disini](https://github.com/letsgetwork/WRT/tree/main/Freeless)
+| Nama Tools  | Penjelasan | Dokumentasi | 
+| ------------- |-------------| :-------------:|
+| BugHunter      | Mendapatkan/mengecek bug via terminal. | [disini](https://github.com/letsgetwork/WRT/tree/main/BugHunter)
+| Freeless 🇮🇩 | Config gratis mode vless di OpenClash OpenWRT, unlimited, no limit time. | [disini](https://github.com/letsgetwork/WRT/tree/main/Freeless)
 
 ------------------------------
 Kalau kamu suka/menemukan error hubungi ARI via:
