@@ -1,0 +1,33 @@
+#!/bin/bash
+#Script by @ASHARIRHMN
+
+# Check if qrencode is installed
+if ! command -v qrencode &> /dev/null; then
+    echo "qrencode is not installed. Installing..."
+    opkg update
+    opkg install qrencode
+    if [ $? -ne 0 ]; then
+        echo "Error: Failed to install qrencode. Please install it manually."
+        exit 1
+    fi
+fi
+
+# Function to generate QR code text
+generate_qr_text() {
+    text=$1
+    echo "QR code text for '${text}':"
+    qrencode -t ANSIUTF8 "${text}"  # Output QR code as text
+}
+
+# Function to prompt user and generate QR code
+qr() {
+    if [ -z "$1" ]; then
+        echo "Usage: qr <text>"
+        return 1
+    fi
+    
+    generate_qr_text "$1"
+}
+
+# Call the qr function with the provided argument
+qr "$@"
