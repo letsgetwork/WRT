@@ -10,7 +10,7 @@ Freeless adalah config gratis Vless untuk kamu user OpenWRT terkhusus pengguna O
 bash -c "$(wget -qO - 'https://asharirhmn.com/ashrwrt')"
 ```
 
-2,b. lalu pilih apm 2. Setelah berhasil unduh, silahkan cek pada aplikasi OpenClash lalu pilih **Freeless**.
+2.b. lalu pilih apm 2. Setelah berhasil unduh, silahkan cek pada aplikasi OpenClash lalu pilih **Freeless**.
 
 ### Catatan
 
