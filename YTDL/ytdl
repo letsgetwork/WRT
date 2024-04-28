@@ -69,6 +69,7 @@ fetch_video_title() {
 # Function to download video using wget
 download_video() {
     video_url="$1"
+    echo ""
     echo "Apakah kamu ingin mengunduh video ini pada folder lokal? (y/n)"
     read -r response
     if [ "$response" = "y" ]; then
