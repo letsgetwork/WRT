@@ -40,11 +40,11 @@ if [ "$1" = "1" ]; then
 elif [ "$1" = "2" ]; then  # Fixed the condition to check the first argument
     bash -c "$(wget -qO - 'https://raw.githubusercontent.com/letsgetwork/WRT/main/Freeless/setup.sh')"
 elif [ "$1" = "3" ]; then  # Fixed the condition to check the first argument
-    bash -c "$(wget -qO - 'https://github.com/letsgetwork/WRT/raw/main/YTDL/setup.sh')"
+    bash -c "$(wget -qO - 'https://raw.githubusercontent.com/letsgetwork/WRT/main/YTDL/setup.sh')"
 elif [ "$1" = "4" ]; then  # Fixed the condition to check the first argument
-    bash -c "$(wget -qO - 'https://github.com/letsgetwork/WRT/raw/main/QRCODE/setup.sh')"
+    bash -c "$(wget -qO - 'https://raw.githubusercontent.com/letsgetwork/WRT/main/QRCODE/setup.sh')"
 elif [ "$1" = "update" ]; then  # Fixed the condition to check the first argument
-    bash -c "$(wget -qO - 'https://github.com/letsgetwork/WRT/raw/main/setup.sh')"
+    bash -c "$(wget -qO - 'https://raw.githubusercontent.com/letsgetwork/WRT/main/setup.sh')"
 elif [ "$1" = "all" ]; then  # Fixed the condition to check the first argument
     bash -c "$(wget -qO - 'https://raw.githubusercontent.com/letsgetwork/WRT/main/BugHunter/setup.sh')" && 
     sleep 3 && 
