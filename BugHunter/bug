@@ -24,6 +24,8 @@ Catatan
     exit 1
 fi
 
+clear # clean terminal before processing bug
+
 # Flag to track if any ping fails
 ping_failed=false
 
