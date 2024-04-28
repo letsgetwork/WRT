@@ -18,7 +18,7 @@ download_files()
 {
     clear
     echo "Mengunduh YTDL... mohon tunggu"
-    wget -O $DIR/ytdl https://github.com/letsgetwork/WRT/raw/main/YTDL/ytdl && chmod +x $DIR/ytdl
+    wget -O $DIR/ytdl https://raw.githubusercontent.com/letsgetwork/WRT/main/YTDL/ytdl && chmod +x $DIR/ytdl
     finish
 }
 
