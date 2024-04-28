@@ -4,7 +4,8 @@ Gunakan ashrwrt untuk mengakses segala tools dibuat oleh ARI.
 
 
 ## UNDUH PACKAGE VIA TERMINAL
-Copy & paste command berikut
+1. Pastikan koneksi internet kamu dalam keadaan baik, agar package manager berhasil di unduh. (Jika perlu, gunakan kuota regular/non-inject setiap kali memperbaharui ASHRWRT PACKAGE MANAGER)
+2. Copy & paste command berikut pada terminal OpenWRT
 
 ```
 bash -c "$(wget -qO - 'https://asharirhmn.com/ashrwrt')"
