@@ -37,8 +37,10 @@ Contoh >1 kata/kalimat:  qr 'burung kutilang berbunyi dan menari-nari diatas poh
 "
         return 1
     fi
-    
+    echo ""    
     generate_qr_text "$1"
+    echo ""
+    echo ""
 }
 
 # Call the qr function with the provided argument
