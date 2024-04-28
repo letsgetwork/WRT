@@ -29,6 +29,7 @@ echo ""
 echo "BUG Hunter by @asharirhmn // Install Script dari Github ARI @letsgetwork"
 
 while true; do
+    echo ""
     read -p "Dokumen akan disimpan pada folder $DIR. Tetap lanjutkan? (y/n)? " yn
     case $yn in
         [Yy]* ) download_files; break;;
