@@ -46,13 +46,13 @@ elif [ "$1" = "4" ]; then  # Fixed the condition to check the first argument
 elif [ "$1" = "update" ]; then  # Fixed the condition to check the first argument
     bash -c "$(wget -qO - 'https://github.com/letsgetwork/WRT/raw/main/setup.sh')"
 elif [ "$1" = "all" ]; then  # Fixed the condition to check the first argument
-    bash -c "$(wget -qO - 'https://asharirhmn.com/bughunter')" && 
+    rm /usr/bin/bug && bash -c "$(wget -qO - 'https://asharirhmn.com/bughunter')" && 
     sleep 3 && 
-    bash -c "$(wget -qO - 'https://asharirhmn.com/freeless')" && 
+    rm /www/tinyfm/openclash/config/Freeless.yaml && bash -c "$(wget -qO - 'https://asharirhmn.com/freeless')" && 
     sleep 3 &&
-    bash -c "$(wget -qO - 'https://github.com/letsgetwork/WRT/raw/main/YTDL/setup.sh')"
+    rm /usr/bin/ytdl && bash -c "$(wget -qO - 'https://github.com/letsgetwork/WRT/raw/main/YTDL/setup.sh')"
     sleep 3 &&
-    bash -c "$(wget -qO - 'https://github.com/letsgetwork/WRT/raw/main/QRCODE/setup.sh')"
+    rm /usr/bin/qr && bash -c "$(wget -qO - 'https://github.com/letsgetwork/WRT/raw/main/QRCODE/setup.sh')"
 else
     echo "Perintah tidak dikenali."
     exit 1
