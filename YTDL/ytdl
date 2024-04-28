@@ -1,7 +1,7 @@
 #!/bin/sh
 # Script by @ASHARIRHMN
 
-# Check if user provided YouTube URL as an argument
+# Check if user provided YouTube URLs as arguments
 if [ $# -eq 0 ]; then
     echo "
 
@@ -17,6 +17,8 @@ Contoh:  ytdl https://www.youtube.com/watch?v=m0Oa75NWwdY
 "
     exit 1
 fi
+
+clear  # Clear the terminal before processing each URL
 
 # Function to install xmllint if not available
 install_xmllint() {
@@ -71,7 +73,7 @@ download_video() {
     video_url="$1"
     echo ""
     echo "Apakah kamu ingin mengunduh video ini pada folder lokal? (y/n)"
-    read -r response
+    read -r -n1 -t5 response  # Wait for 5 seconds for response
     if [ "$response" = "y" ]; then
         echo "Video sedang di unduh ..."
         wget --quiet --show-progress --progress=bar:force:noscroll -P "/root/YTDL" "$video_url"
@@ -80,8 +82,10 @@ download_video() {
         else
             echo "Gagal mengunduh video."
         fi
-    else
+    elif [ "$response" = "n" ]; then
         echo "Video tidak akan di unduh."
+    else
+        echo "Waktu habis, tidak ada respons. Video tidak akan di unduh."
     fi
 }
 
@@ -101,34 +105,34 @@ rename_video() {
     fi
 }
 
-
-
-# Extract the video URL from the command-line argument
-video_url="$1"
-
-# Extract the video ID from the URL
-video_id=$(extract_video_id "$video_url")
-
-# Construct the URL for fetching the direct link
-url=$(construct_url "$video_id")
-
 # Install xmllint if not available
 install_xmllint
 
-# Fetch the URL and wait for 3 seconds
-echo "Mohon tunggu..."
-sleep 3
+# Process each provided YouTube URL
+for url in "$@"; do
+    echo "Memproses: $url"
+    # Extract the video ID from the URL
+    video_id=$(extract_video_id "$url")
+
+    # Construct the URL for fetching the direct link
+    constructed_url=$(construct_url "$video_id")
+
+    # Fetch the URL and wait for 3 seconds
+    echo "Mohon tunggu..."
+    sleep 3
 
 # Check if xmllint is still installed
 if command -v xmllint &> /dev/null; then
-    echo "xmllint is still installed."
+    # echo "xmllint is still installed."  <-- Remove or comment out this line
     # Extract direct video link
-    direct_link=$(extract_direct_video_link "$url")
+    direct_link=$(extract_direct_video_link "$constructed_url")
     # Fetch video title
-    video_title=$(fetch_video_title "$url")
+    video_title=$(fetch_video_title "$constructed_url")
     # Output the direct video link if extraction is successful
     if [ -n "$direct_link" ]; then
-        echo "Direct URL Youtube Video : $direct_link"
+        echo ""
+        echo "Berhasil!. Klik/Copy paste link:"
+        echo $direct_link
         # Download the video
         download_video "$direct_link"
         # Rename the video file
@@ -139,4 +143,5 @@ if command -v xmllint &> /dev/null; then
 else
     echo "xmllint is not installed anymore."
 fi
-
+    echo ""
+done
