@@ -6,7 +6,7 @@ DIR=/usr/bin
 finish(){
     clear
     echo ""
-    echo "UNDUH ASHRWRT PACKAGE MANAGE SELESAI ❤️"
+    echo "UNDUH ASHRWRT PACKAGE MANAGER SELESAI ❤️"
     echo ""
     echo "Ketik apm untuk melihat menu/command terminal"
     echo ""
