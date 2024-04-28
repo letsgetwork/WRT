@@ -16,12 +16,12 @@ Tools tersedia:
 4. QRCODE
 
 UNDUH/UPDATE
-Ketik ashrwrt 1 : Untuk mengunduh/update tools Bughunter
-Ketik ashrwrt 2 : Untuk mengunduh/update tools Freeless
-Ketik ashrwrt 3 : Untuk mengunduh/update tools YTDL
-Ketik ashrwrt 4 : Untuk mengunduh/update tools QRCODE
-Ketik ashrwrt all : Untuk mengunduh/update keseluruhan tools
-Ketik ashrwrt update : Untuk mengunduh/update ashrwrt package manager
+Ketik apm 1 : Untuk mengunduh/update tools Bughunter
+Ketik apm 2 : Untuk mengunduh/update tools Freeless
+Ketik apm 3 : Untuk mengunduh/update tools YTDL
+Ketik apm 4 : Untuk mengunduh/update tools QRCODE
+Ketik apm all : Untuk mengunduh/update keseluruhan tools
+Ketik apm update : Untuk mengunduh/update apm package manager
 
 
 MENJALANKAN PERINTAH SETELAH BERHASIL.
@@ -36,9 +36,9 @@ fi
 
 # Define actions for different arguments
 if [ "$1" = "1" ]; then
-    bash -c "$(wget -qO - 'https://asharirhmn.com/bughunter')"
+    bash -c "$(wget -qO - 'https://raw.githubusercontent.com/letsgetwork/WRT/main/BugHunter/setup.sh')"
 elif [ "$1" = "2" ]; then  # Fixed the condition to check the first argument
-    bash -c "$(wget -qO - 'https://asharirhmn.com/freeless')"
+    bash -c "$(wget -qO - 'https://raw.githubusercontent.com/letsgetwork/WRT/main/Freeless/setup.sh')"
 elif [ "$1" = "3" ]; then  # Fixed the condition to check the first argument
     bash -c "$(wget -qO - 'https://github.com/letsgetwork/WRT/raw/main/YTDL/setup.sh')"
 elif [ "$1" = "4" ]; then  # Fixed the condition to check the first argument
@@ -46,15 +46,20 @@ elif [ "$1" = "4" ]; then  # Fixed the condition to check the first argument
 elif [ "$1" = "update" ]; then  # Fixed the condition to check the first argument
     bash -c "$(wget -qO - 'https://github.com/letsgetwork/WRT/raw/main/setup.sh')"
 elif [ "$1" = "all" ]; then  # Fixed the condition to check the first argument
-    rm /usr/bin/bug && bash -c "$(wget -qO - 'https://asharirhmn.com/bughunter')" && 
+    bash -c "$(wget -qO - 'https://raw.githubusercontent.com/letsgetwork/WRT/main/BugHunter/setup.sh')" && 
     sleep 3 && 
-    rm /www/tinyfm/openclash/config/Freeless.yaml && bash -c "$(wget -qO - 'https://asharirhmn.com/freeless')" && 
+    bash -c "$(wget -qO - 'https://raw.githubusercontent.com/letsgetwork/WRT/main/Freeless/setup.sh')" && 
     sleep 3 &&
-    rm /usr/bin/ytdl && bash -c "$(wget -qO - 'https://github.com/letsgetwork/WRT/raw/main/YTDL/setup.sh')"
+    bash -c "$(wget -qO - 'https://raw.githubusercontent.com/letsgetwork/WRT/main/YTDL/setup.sh')"
     sleep 3 &&
-    rm /usr/bin/qr && bash -c "$(wget -qO - 'https://github.com/letsgetwork/WRT/raw/main/QRCODE/setup.sh')"
+    bash -c "$(wget -qO - 'https://raw.githubusercontent.com/letsgetwork/WRT/main/QRCODE/setup.sh')"
+    sleep 2
+    echo ""
+    echo ""
+    echo "Semua aplikasi berhasil di unduh. Enjoy 😍 "
+    echo ""
+    echo ""
 else
     echo "Perintah tidak dikenali."
     exit 1
 fi
-
