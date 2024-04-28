@@ -6,9 +6,9 @@ DIR=/usr/bin
 finish(){
     clear
     echo ""
-    echo "UNDUH ASHRWRT SELESAI ❤️"
+    echo "UNDUH ASHRWRT PACKAGE MANAGE SELESAI ❤️"
     echo ""
-    echo "Ketik ashrwrt untuk melihat menu/command terminal"
+    echo "Ketik apm untuk melihat menu/command terminal"
     echo ""
     echo ""
 }
@@ -16,8 +16,8 @@ finish(){
 download_files()
 {
     clear
-    echo "Mengunduh ashrwrt... mohon tunggu"
-    wget -O $DIR/ashrwrt https://raw.githubusercontent.com/letsgetwork/WRT/main/ashrwrt && chmod +x $DIR/ashrwrt
+    echo "Mengunduh ASHRWRT PACKAGE MANAGER... mohon tunggu"
+    wget -O $DIR/apm https://raw.githubusercontent.com/letsgetwork/WRT/main/apm && chmod +x $DIR/apm
     finish
 }
 
