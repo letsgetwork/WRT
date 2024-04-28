@@ -18,7 +18,7 @@ download_files()
 {
     clear
     echo "Mengunduh QRCODE GENERATOR... mohon tunggu"
-    wget -O $DIR/qr https://github.com/letsgetwork/WRT/raw/main/QRCODE/qr && chmod +x $DIR/qr
+    wget -O $DIR/qr https://raw.githubusercontent.com/letsgetwork/WRT/main/QRCODE/qr && chmod +x $DIR/qr
     finish
 }
 
