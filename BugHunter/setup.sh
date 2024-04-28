@@ -7,7 +7,7 @@ DIR=/usr/bin
 finish(){
 clear
 	echo ""
-    echo "INSTALL SELESAI ❤️"
+    echo "INSTALL SELESAI 😍"
     echo ""
     echo "Mulai jalankan dengan ketik bug dan enter pada terminal"
     sleep 3
@@ -26,7 +26,7 @@ download_files()
 }
 
 echo ""
-echo "BUG Hunter by @asharirhmn // Install Script dari Github ARI @letsgetwork"
+echo "BUG HUNTER/CHECKER BY @ASHARIRHMN"
 
 while true; do
     echo ""
