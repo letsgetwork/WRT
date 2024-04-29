@@ -18,7 +18,7 @@ Contoh:  ytdl https://www.youtube.com/watch?v=m0Oa75NWwdY
     exit 1
 fi
 
-clear  # Clear the terminal before processing each URL
+
 
 # Function to install xmllint if not available
 install_xmllint() {
@@ -73,8 +73,10 @@ download_video() {
     video_url="$1"
     echo ""
     echo "Apakah kamu ingin mengunduh video ini pada folder lokal? (y/n)"
-    read -r -n1 -t5 response  # Wait for 5 seconds for response
+    read -r -n1 -t20 response  # Wait for 20 seconds for response
     if [ "$response" = "y" ]; then
+        echo ""
+        echo ""
         echo "Video sedang di unduh ..."
         wget --quiet --show-progress --progress=bar:force:noscroll -P "/root/YTDL" "$video_url"
         if [ $? -eq 0 ]; then
@@ -83,6 +85,8 @@ download_video() {
             echo "Gagal mengunduh video."
         fi
     elif [ "$response" = "n" ]; then
+        echo ""
+        echo ""
         echo "Video tidak akan di unduh."
     else
         echo "Waktu habis, tidak ada respons. Video tidak akan di unduh."
@@ -117,8 +121,10 @@ for url in "$@"; do
     # Construct the URL for fetching the direct link
     constructed_url=$(construct_url "$video_id")
 
-    # Fetch the URL and wait for 3 seconds
+    # Fetch the URL and wait for totl 5 seconds
     echo "Mohon tunggu..."
+    sleep 2
+    echo "Sedang meramu link..."
     sleep 3
 
 # Check if xmllint is still installed
@@ -131,7 +137,7 @@ if command -v xmllint &> /dev/null; then
     # Output the direct video link if extraction is successful
     if [ -n "$direct_link" ]; then
         echo ""
-        echo "Berhasil!. Klik/Copy paste link:"
+        echo "Video link berhasil didapatkan!. Klik/copy paste link pada browser:"
         echo $direct_link
         # Download the video
         download_video "$direct_link"
