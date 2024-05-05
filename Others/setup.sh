@@ -25,7 +25,7 @@ download_files()
     sleep 5
     wget -O $DIR/hilink https://raw.githubusercontent.com/letsgetwork/WRT/main/Others/hilink && chmod +x $DIR/hilink
     sleep 5
-    wget -O $DIR/lite_watchdog.sh https://raw.githubusercontent.com/letsgetwork/WRT/main/Others/lite_watchdog.sh && chmod +x $DIR/lite_watchdog.sh
+    wget -O $DIR/lite_watchdog.sh https://raw.githubusercontent.com/letsgetwork/WRT/main/Others/lite_watchdog.sh && chmod +rwx $DIR/lite_watchdog.sh
     sleep 5
     finish
 }
