@@ -14,8 +14,14 @@ finish(){
 }
 
 check_internet_connection() {
+        clear
+        echo "Mengecek koneksi..."
     if ping -c 5 google.co.id ; then
+        echo ""
+        echo "Ping OK"
+        echo ""
         echo "Koneksi internet baik. Memulai unduhan..."
+        sleep 5
         download_files
     else
         echo "Koneksi bermasalah. Ulangi kembali."
