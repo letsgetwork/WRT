@@ -10,7 +10,7 @@ if [ $# -eq 0 ]; then
 
 ==============================================================
          ASHRWRT PACKAGE MANAGER BY @ASHARIRHMN   
-            Last update: 01-05-2024 10.14 AM
+            Last update: 05-05-2024 02.17 PM
 ==============================================================
 
 Tools tersedia:
@@ -18,12 +18,14 @@ Tools tersedia:
 2. Freeless
 3. YTDL
 4. QRCODE
+5. Others
 
 UNDUH/UPDATE
 Ketik apm 1 : Untuk mengunduh/update tools Bughunter
 Ketik apm 2 : Untuk mengunduh/update tools Freeless
 Ketik apm 3 : Untuk mengunduh/update tools YTDL
 Ketik apm 4 : Untuk mengunduh/update tools QRCODE
+Ketik apm 5 : Untuk mengunduh/update tools Others (Tools dari Repo lain dengan konstumisasi ARI)
 Ketik apm all : Untuk mengunduh/update keseluruhan tools
 Ketik apm update : Untuk mengunduh/update apm package manager
 
@@ -47,6 +49,8 @@ elif [ "$1" = "3" ]; then  # Fixed the condition to check the first argument
     bash -c "$(wget -qO - 'https://raw.githubusercontent.com/letsgetwork/WRT/main/YTDL/setup.sh')"
 elif [ "$1" = "4" ]; then  # Fixed the condition to check the first argument
     bash -c "$(wget -qO - 'https://raw.githubusercontent.com/letsgetwork/WRT/main/QRCODE/setup.sh')"
+elif [ "$1" = "5" ]; then  # Fixed the condition to check the first argument
+    bash -c "$(wget -qO - 'https://raw.githubusercontent.com/letsgetwork/WRT/main/Others/setup.sh')"
 elif [ "$1" = "update" ]; then  # Fixed the condition to check the first argument
     bash -c "$(wget -qO - 'https://raw.githubusercontent.com/letsgetwork/WRT/main/setup.sh')"
 elif [ "$1" = "all" ]; then  # Fixed the condition to check the first argument
