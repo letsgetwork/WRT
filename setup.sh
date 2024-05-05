@@ -14,7 +14,7 @@ finish(){
 }
 
 check_internet_connection() {
-    if ping -c 1 google.co.id >/dev/null; then
+    if ping -c 1 google.co.id ; then
         echo "Koneksi internet baik. Memulai unduhan..."
         download_files
     else
