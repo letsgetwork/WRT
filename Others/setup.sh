@@ -8,7 +8,7 @@ finish(){
     echo ""
     echo "UNDUH OTHER TOOLS LAIN SELESAI ❤️"
     echo ""
-    echo "Silahkan cek pada /usr/bin/""
+    echo "Silahkan cek pada /usr/bin/"
     echo ""
     echo ""
 }
