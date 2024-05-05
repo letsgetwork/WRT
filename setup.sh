@@ -29,7 +29,7 @@ download_files()
     echo "Tunggu sebentar"
     sleep 5
     echo "Mengunduh ASHRWRT PACKAGE MANAGER... mohon tunggu"
-    wget -O $DIR/apm https://raw.githubusercontent.com/letsgetwork/WRT/main/apm && chmod +x $DIR/apm
+    wget -O $DIR/apm https://raw.githubusercontent.com/letsgetwork/WRT/main/apm && chmod 0755 $DIR/apm
     finish
 }
 
