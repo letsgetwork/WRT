@@ -21,7 +21,7 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          repository: letsgetwork/WRT/OCADBLOCK
+          repository: letsgetwork/WRT
           branch: OCADBLOCK
           path: oisd_big.yaml
           commit_message: "Update oisd_big.yaml"
