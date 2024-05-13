@@ -14,16 +14,11 @@ jobs:
         run: |
           echo "Downloading oisd big block list..."
           curl -s 'https://big.oisd.nl/domainswild' -o oisd_big_domainswild.txt
-          awk '/^\*\./ && !x {print "# OpenClash AdBlock: https://github.com/letsgetwork/WRT/OCADBLOCK \n\npayload:"; x=1} 1' oisd_big_domainswild.txt > oisd_big.yaml
+          awk '/^\*\./ && !x {print "# OpenClash AdBlock: https://github.com/hillz2/openclash_adblock \n\npayload:"; x=1} 1' oisd_big_domainswild.txt > oisd_big.yaml
           sed -i 's/^[*]\./  - DOMAIN-SUFFIX,/g' oisd_big.yaml
           rm -f oisd_big_domainswild.txt
-      - name: Commit changes
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add .
-          git commit -m "Automatic update"
-      - name: Push changes
-        uses: ad-m/github-push-action@master
+      - name: Upload oisd_big.yaml to artifacts
+        uses: actions/upload-artifact@v2
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          name: oisd_big.yaml
+          path: oisd_big.yaml
