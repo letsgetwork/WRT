@@ -20,7 +20,7 @@ jobs:
       - name: Upload oisd_big.yaml to repository
         uses: ad-m/github-push-action@master
         with:
-          repository: letsgetwork/WRT/OCADBLOCK
+          repository: letsgetwork/WRT
           branch: main
-          path: oisd_big.yaml
+          path: OCADBLOCK
           commit_message: "Update oisd_big.yaml"
