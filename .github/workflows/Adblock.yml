@@ -10,18 +10,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@main
-      - name: Download adblock list
+      - name: adblock
         run: |
           echo "Downloading oisd big block list..."
           curl -s 'https://big.oisd.nl/domainswild' -o oisd_big_domainswild.txt
           awk '/^\*\./ && !x {print "# OpenClash AdBlock: https://github.com/letsgetwork/WRT/OCADBLOCK \n\npayload:"; x=1} 1' oisd_big_domainswild.txt > oisd_big.yaml
           sed -i 's/^[*]\./  - DOMAIN-SUFFIX,/g' oisd_big.yaml
-          rm -f oisd_big_domainswild.txt
-      - name: Upload oisd_big.yaml to repository
-        uses: ad-m/github-push-action@master
+          rm -fr oisd_big.yamle oisd_big_domainswild.txt
+      - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          repository: letsgetwork/WRT
-          branch: OCADBLOCK
-          path: oisd_big.yaml
-          commit_message: "Update oisd_big.yaml"
+          commit_message: Automatic update
