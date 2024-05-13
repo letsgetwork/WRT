@@ -22,5 +22,5 @@ jobs:
         with:
           repository: letsgetwork/WRT
           branch: main
-          path: OCADBLOCK
+          path: ./OCADBLOCK/oisd_big.yaml
           commit_message: "Update oisd_big.yaml"
