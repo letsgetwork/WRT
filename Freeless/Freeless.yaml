@@ -1,3 +1,4 @@
+#Update per 13 Mei 2024 08.10PM
 port: 7890
 socks-port: 7891
 redir-port: 7892
@@ -18,11 +19,18 @@ dns:
   enhanced-mode: fake-ip
   listen: 0.0.0.0:7874
   nameserver:
-  - https://dns.google/dns-query
+  - dns.google/dns-query
   - 8.8.8.8
   - 8.8.4.4
   - 1.1.1.1
   - 1.0.0.1
+  # dibawah ini DNS XL (anti bengong / minim dc)
+  - 112.215.198.248
+  - 112.215.203.254
+  - 112.215.203.248
+  - 112.215.198.253
+  - 112.215.203.246
+  - 112.215.203.247
 
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
@@ -145,7 +153,7 @@ dns:
   - "+.google.co.id"
   - "+.android.com"
   - "+.time.android.com"
-  - 8.8.8.8
+  - "+.xl.co.id"
 
 proxies:
   - name: 🇮🇩 SI BIRU XCP WS
