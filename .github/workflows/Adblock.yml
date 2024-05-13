@@ -10,13 +10,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@main
-      - name: adblock
+      - name: Download adblock list
         run: |
           echo "Downloading oisd big block list..."
           curl -s 'https://big.oisd.nl/domainswild' -o oisd_big_domainswild.txt
           awk '/^\*\./ && !x {print "# OpenClash AdBlock: https://github.com/letsgetwork/WRT/OCADBLOCK \n\npayload:"; x=1} 1' oisd_big_domainswild.txt > oisd_big.yaml
           sed -i 's/^[*]\./  - DOMAIN-SUFFIX,/g' oisd_big.yaml
-          rm -fr oisd_big.yamle oisd_big_domainswild.txt
-      - uses: actions/checkout@v4
+          rm -f oisd_big_domainswild.txt
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m "Automatic update"
+      - name: Push changes
+        uses: ad-m/github-push-action@master
         with:
-          commit_message: Automatic update
+          github_token: ${{ secrets.GITHUB_TOKEN }}
