@@ -15,7 +15,7 @@ jobs:
           echo "Downloading oisd small block list..."
           curl -s 'https://small.oisd.nl/domainswild' -o oisd_small_domainswild.txt
           awk '/^\*\./ && !x {print "# OpenClash AdBlock: https://github.com/letsgetwork/WRT \n\npayload:"; x=1} 1' oisd_small_domainswild.txt > oisd_small.yaml
-          sed -i 's/^[*]\./  - DOMAIN-SUFFIX,/g' small_small.yaml
+          sed -i 's/^[*]\./  - DOMAIN-SUFFIX,/g' oisd_small.yaml
           rm -fr oisd_small.yamle oisd_small_domainswild.txt
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
