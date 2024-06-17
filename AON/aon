@@ -24,7 +24,7 @@ while true; do
         echo "Gagal mendapatkan koneksi ke $HOST, restart modem lewat /usr/bin/hilink iphunter"
         until ping -c 1 $HOST &> /dev/null; do
             /usr/bin/hilink iphunter
-            sleep 1
+            sleep 10
         done
         echo "Berhasil terhubung ke $HOST. Mulai ping"
     fi
