@@ -8,7 +8,7 @@
 
 # Check if a hostname argument is provided
 if [[ -z "$1" ]]; then
-    echo "Usage: aon <hostname>"
+    echo "Gunakan aon <hostname>. contoh: aon google.com"
     exit 1
 fi
 
@@ -19,14 +19,14 @@ while true; do
     PING_RESULT=$(ping -c 1 $HOST 2>/dev/null)
     if [[ $? -eq 0 ]]; then
         PING_TIME=$(echo "$PING_RESULT" | grep 'time=' | awk -F'time=' '{print $2}' | awk '{print $1}')
-        echo "Ping to $HOST successful ($PING_TIME ms)"
+        echo "Ping ke $HOST berhasil ($PING_TIME ms)"
     else
-        echo "Gagal mendapatkan koneksi ke $HOST, restart modem lewat /usr/bin/hilink iphunter"
+        echo "Gagal mendapatkan koneksi ke $HOST, auto restart modem lewat /usr/bin/hilink iphunter"
         until ping -c 1 $HOST &> /dev/null; do
             /usr/bin/hilink iphunter
             sleep 10
         done
-        echo "Berhasil terhubung ke $HOST. Mulai ping"
+        echo "Berhasil terhubung ke $HOST. Menjalankan ping kembali"
     fi
     sleep 1
 done
