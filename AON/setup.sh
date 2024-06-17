@@ -18,7 +18,7 @@ download_files()
 {
     clear
     echo "Mengunduh AON... mohon tunggu"
-    wget -O $DIR/AON https://raw.githubusercontent.com/letsgetwork/WRT/main/AON/aon && chmod +x $DIR/aon
+    wget -O $DIR/aon https://raw.githubusercontent.com/letsgetwork/WRT/main/AON/aon && chmod 0755 $DIR/aon
     finish
 }
 
