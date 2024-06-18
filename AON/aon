@@ -1,6 +1,6 @@
 #!/bin/bash
-#version 1.1
 # SCRIPT BY @ASHARIRHMN
+# version 1.2
 # Jalankan melalui terminal dengan command berikut nohup aon <hostname> >/dev/null 2>&1& . contoh: nohup /usr/bin/aon xl.co.id >/dev/null 2>&1&
 # Untuk melihat script berhasil jalan di backround atau tidak, pada terminal OpenWRT ketik command pgrep -l aon
 # TIPS: Agar setiap kali STB OpenWRT restart/reboot menjalankan script ini, tambahkan script ini pada System > Startup (tested on FW Reyre). Ketik command berikut: nohup /usr/bin/aon google.co.id >/dev/null 2>&1&
@@ -43,6 +43,7 @@ while true; do
         echo "Gagal mendapatkan koneksi ke $HOST, auto restart modem lewat /usr/bin/hilink iphunter"
         until ping -c 1 $HOST &> /dev/null; do
             /usr/bin/hilink iphunter
+            /usr/bin/jam youtube.com
             sleep 80
         done
         echo "Berhasil terhubung ke $HOST. Menjalankan ping kembali"
