@@ -22,6 +22,8 @@ download_files()
     sleep 5
     wget -O $DIR/hilink https://raw.githubusercontent.com/letsgetwork/WRT/main/Others/hilink && chmod 0755 $DIR/hilink
     sleep 5
+    wget -O $DIR/jam https://raw.githubusercontent.com/letsgetwork/WRT/main/Others/jam && chmod 0755 $DIR/jam
+    sleep 5
     finish
 }
 
