@@ -1,6 +1,6 @@
 #!/bin/bash
 # SCRIPT BY @ASHARIRHMN
-# version 1.3
+# version 1.4 (Last update: 01/08/2024 06.11PM)
 # Jalankan melalui terminal dengan command berikut nohup aon <hostname1> <hostname2> ... > /dev/null 2>&1& . contoh: nohup /usr/bin/aon xl.co.id google.com > /dev/null 2>&1&
 # Untuk melihat script berhasil jalan di backround atau tidak, pada terminal OpenWRT ketik command pgrep -l aon
 # TIPS: Agar setiap kali STB OpenWRT restart/reboot menjalankan script ini, tambahkan script ini pada System > Startup (tested on FW Reyre). Ketik command berikut: nohup /usr/bin/aon google.co.id facebook.com > /dev/null 2>&1&
@@ -53,7 +53,7 @@ while true; do
             # Run /usr/bin/hilink iphunter until ping is successful again
             until ping -c 1 $HOST &> /dev/null; do
                 /usr/bin/hilink iphunter
-                sleep 80
+                sleep 3600
             done
             echo "Berhasil terhubung ke $HOST. Menjalankan ping kembali"
         fi
