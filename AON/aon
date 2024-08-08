@@ -53,7 +53,7 @@ while true; do
             # Run /usr/bin/hilink iphunter until ping is successful again
             until ping -c 1 $HOST &> /dev/null; do
                 /usr/bin/hilink iphunter
-                sleep 3600
+                sleep 600
             done
             echo "Berhasil terhubung ke $HOST. Menjalankan ping kembali"
         fi
