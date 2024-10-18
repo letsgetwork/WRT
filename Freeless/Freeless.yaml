@@ -1,4 +1,4 @@
-#Update per 18 Oct 2024 11.14AM
+#Update per 18 Oct 2024 20.18
 port: 7890
 socks-port: 7891
 redir-port: 7892
@@ -203,7 +203,7 @@ proxies:
     udp: true
 
   - name: 🇮🇩 SI BIRU VISION WS
-    server: quiz.vidio.com
+    server: 104.18.226.52
     port: 443
     type: vless
     uuid: 524a671f-c6a1-42cb-bc55-976970623017
