@@ -20,17 +20,11 @@ dns:
   listen: 0.0.0.0:7874
   nameserver:
   - dns.google/dns-query
+  - dnsxl.proxyip.v6.army 
   - 8.8.8.8
   - 8.8.4.4
   - 1.1.1.1
   - 1.0.0.1
-  # dibawah ini DNS XL (anti bengong / minim dc)
-  - 112.215.198.248
-  - 112.215.203.254
-  - 112.215.203.248
-  - 112.215.198.253
-  - 112.215.203.246
-  - 112.215.203.247
 
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
