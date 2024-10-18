@@ -191,20 +191,20 @@ proxies:
     udp: true
     
   - name: 🇮🇩 SI BIRU VIDIO WS
-    server: quiz.vidio.com
+    server: vid.buggg.v6.army
     port: 443
     type: vless
-    uuid: 90cd4a77-141a-43c9-991b-08263cfe9c16
+    uuid: 01929d90-83b6-7ec7-a5f6-13bb4801e450
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: teler.dns.army
+    servername: vpn.ikonek.xyz
     network: ws
     ws-opts:
       path: /vip
       headers:
-        Host: teler.dns.army
+        Host: vpn.ikonek.xyz
     udp: true
 
   - name: 🇮🇩 SI BIRU VISION WS
