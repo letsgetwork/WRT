@@ -16,4 +16,4 @@ bash -c "$(wget -qO - 'https://asharirhmn.com/ashrwrt')"
 
 1. Hanya untuk user OpenWRT STB
 2. Tested/work pada **OpenClash v0.45.164-beta** & FW OpenWRT Reyre (FW lain mungkin harus menyesuaikan)
-3. Config tersedia mode WS: **Si biru (vidio, vision, xcp) & Si merah (Ilped)**
+3. Config tersedia mode WS: **Si biru (vidio, vision) & Si merah (Ilped)**
