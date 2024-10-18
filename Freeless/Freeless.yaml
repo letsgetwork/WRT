@@ -154,6 +154,7 @@ dns:
   - "+.android.com"
   - "+.time.android.com"
   - "+.xl.co.id"
+  - "+.v6.army"
 
 proxies:
   - name: 🇮🇩 SI BIRU XCP WS
@@ -199,12 +200,12 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: vpn.ikonek.xyz
+    servername: konek.buggg.v6.army
     network: ws
     ws-opts:
       path: /vip
       headers:
-        Host: vpn.ikonek.xyz
+        Host: konek.buggg.v6.army
     udp: true
 
   - name: 🇮🇩 SI BIRU VISION WS
