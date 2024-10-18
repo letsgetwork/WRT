@@ -166,12 +166,12 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: teler.dns.army
+    servername: konek.buggg.v6.army
     network: ws
     ws-opts:
       path: /vip
       headers:
-        Host: teler.dns.army
+        Host: konek.buggg.v6.army
     udp: true
 
   - name: 🇮🇩 SI BIRU XCP 2 WS
@@ -183,12 +183,12 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: teler.dns.army
+    servername: konek.buggg.v6.army
     network: ws
     ws-opts:
       path: /vip
       headers:
-        Host: teler.dns.army
+        Host: konek.buggg.v6.army
     udp: true
     
   - name: 🇮🇩 SI BIRU VIDIO WS
@@ -217,12 +217,12 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: teler.dns.army
+    servername: konek.buggg.v6.army
     network: ws
     ws-opts:
       path: /vip
       headers:
-        Host: teler.dns.army
+        Host: konek.buggg.v6.army
     udp: true
     
   - name: 🇮🇩 SI MERAH ILPED WS
@@ -234,12 +234,12 @@ proxies:
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: teler.dns.army
+    servername: konek.buggg.v6.army
     network: ws
     ws-opts:
       path: /vip
       headers:
-        Host: teler.dns.army
+        Host: konek.buggg.v6.army
     udp: true
 
 proxy-groups:
