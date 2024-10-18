@@ -161,85 +161,85 @@ proxies:
     server: cvs-deo.shopeemobile.com
     port: 443
     type: vless
-    uuid: 01929d90-83b6-7ec7-a5f6-13bb4801e450
+    uuid: 524a671f-c6a1-42cb-bc55-976970623017
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: konek.buggg.v6.army
+    servername: vless-free4u.pages.dev
     network: ws
     ws-opts:
       path: /vip
       headers:
-        Host: konek.buggg.v6.army
+        Host: vless-free4u.pages.dev
     udp: true
 
   - name: 🇮🇩 SI BIRU XCP 2 WS
     server: cf.shopee.co.id
     port: 443
     type: vless
-    uuid: 01929d90-83b6-7ec7-a5f6-13bb4801e450
+    uuid: 524a671f-c6a1-42cb-bc55-976970623017
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: konek.buggg.v6.army
+    servername: vless-free4u.pages.dev
     network: ws
     ws-opts:
       path: /vip
       headers:
-        Host: konek.buggg.v6.army
+        Host: vless-free4u.pages.dev
     udp: true
     
   - name: 🇮🇩 SI BIRU VIDIO WS
     server: vid.buggg.v6.army
     port: 443
     type: vless
-    uuid: 01929d90-83b6-7ec7-a5f6-13bb4801e450
+    uuid: 524a671f-c6a1-42cb-bc55-976970623017
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: konek.buggg.v6.army
+    servername: vless-free4u.pages.dev
     network: ws
     ws-opts:
       path: /vip
       headers:
-        Host: konek.buggg.v6.army
+        Host: vless-free4u.pages.dev
     udp: true
 
   - name: 🇮🇩 SI BIRU VISION WS
     server: quiz.vidio.com
     port: 443
     type: vless
-    uuid: 01929d90-83b6-7ec7-a5f6-13bb4801e450
+    uuid: 524a671f-c6a1-42cb-bc55-976970623017
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: konek.buggg.v6.army
+    servername: vless-free4u.pages.dev
     network: ws
     ws-opts:
       path: /vip
       headers:
-        Host: konek.buggg.v6.army
+        Host: vless-free4u.pages.dev
     udp: true
     
   - name: 🇮🇩 SI MERAH ILPED WS
     server: 104.26.6.171
     port: 443
     type: vless
-    uuid: 01929d90-83b6-7ec7-a5f6-13bb4801e450
+    uuid: 524a671f-c6a1-42cb-bc55-976970623017
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: konek.buggg.v6.army
+    servername: vless-free4u.pages.dev
     network: ws
     ws-opts:
       path: /vip
       headers:
-        Host: konek.buggg.v6.army
+        Host: vless-free4u.pages.dev
     udp: true
 
 proxy-groups:
