@@ -3,7 +3,7 @@
 # version 1.4 (Last update: 24/11/2024 04.54PM)
 # Jalankan melalui terminal dengan command berikut nohup aon <hostname1> <hostname2> ... > /dev/null 2>&1& . contoh: nohup /usr/bin/aon xl.co.id google.com > /dev/null 2>&1&
 # Untuk melihat script berhasil jalan di backround atau tidak, pada terminal OpenWRT ketik command pgrep -l aon
-# TIPS: Agar setiap kali STB OpenWRT restart/reboot menjalankan script ini, tambahkan script ini pada System > Startup (tested on FW Reyre). Ketik command berikut: nohup /usr/bin/aon google.co.id facebook.com > /dev/null 2>&1&
+# TIPS: Agar setiap kali STB OpenWRT restart/reboot menjalankan script ini, tambahkan script ini pada System > Startup (tested on FW Reyre). Ketik command berikut: nohup /usr/bin/aon google.co.id facebook.com >/dev/null 2>&1&
 # Kalau kamu suka, kirimkan dukungan/donasi melalui SAWERIA (https://saweria.co/ashr) agar selalu update script terbaru
 
 # Function to kill all aon processes
