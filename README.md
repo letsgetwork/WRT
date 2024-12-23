@@ -1,4 +1,4 @@
-# Kumpulan Hasil Belajar Otodidak OpenWRT ARI
+# Kumpulan Hasil Belajar Otodidak OpenWRT ARI (STB Only)
 Gunakan ashrwrt untuk mengakses segala tools dibuat oleh ARI.
 
 
