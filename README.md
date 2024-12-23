@@ -14,6 +14,7 @@ bash -c "$(wget -qO - 'https://asharirhmn.com/ashrwrt')"
 ## Tools
 | Nama Tools  | Penjelasan | Ideation/Development | Rilis | Dokumentasi | 
 | ------------- | ------------- | ------------- | ------------- | :-------------:|
+| AON      | Auto restart modem hilink dengan metode IP hunter agar koneksi tetap Always ON | 1 Juni 2024 | 17 Juni 2024 | [disini](https://github.com/letsgetwork/WRT/tree/main/AON)
 | QRCODE      | Generate QRCODE langsung dari OpenWRT. | 27 April 2024 | 27 April 2024 | [disini](https://github.com/letsgetwork/WRT/tree/main/QRCODE)
 | YTDL      | Unduh Youtube Video langsung dari OpenWRT. | 27 April 2024 | 27 April 2024 | [disini](https://github.com/letsgetwork/WRT/tree/main/YTDL)
 | BugHunter      | Mendapatkan/mengecek bug via terminal. | 24 April 2024 | 27 April 2024 | [disini](https://github.com/letsgetwork/WRT/tree/main/BugHunter)
