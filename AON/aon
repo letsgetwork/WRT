@@ -1,8 +1,8 @@
 #!/bin/bash
 # SCRIPT BY @ASHARIRHMN
-# version 1.4 (Last update: 24/11/2024 04.54PM)
+# version 1.6 (Last update: 16/12/2024 10:30AM)
 # Jalankan melalui terminal dengan command berikut nohup aon <hostname1> <hostname2> ... > /dev/null 2>&1& . contoh: nohup /usr/bin/aon xl.co.id google.com > /dev/null 2>&1&
-# Untuk melihat script berhasil jalan di backround atau tidak, pada terminal OpenWRT ketik command pgrep -l aon
+# Untuk melihat script berhasil jalan di background atau tidak, pada terminal OpenWRT ketik command pgrep -l aon
 # TIPS: Agar setiap kali STB OpenWRT restart/reboot menjalankan script ini, tambahkan script ini pada System > Startup (tested on FW Reyre). Ketik command berikut: nohup /usr/bin/aon google.co.id facebook.com >/dev/null 2>&1&
 # Kalau kamu suka, kirimkan dukungan/donasi melalui SAWERIA (https://saweria.co/ashr) agar selalu update script terbaru
 
@@ -34,29 +34,32 @@ fi
 HOSTS=("$@")
 echo "Mulai mendapatkan koneksi ke ${HOSTS[*]}..."
 
-while true; do
-    for HOST in "${HOSTS[@]}"; do
+# Function to test ping and decide action
+ping_host() {
+    local HOST=$1
+    local FAIL_COUNT=0
+
+    while true; do
         PING_RESULT=$(ping -c 1 $HOST 2>/dev/null)
         if [[ $? -eq 0 ]]; then
             PING_TIME=$(echo "$PING_RESULT" | grep 'time=' | awk -F'time=' '{print $2}' | awk '{print $1}')
             echo "Ping ke $HOST berhasil ($PING_TIME ms)"
+            FAIL_COUNT=0 # Reset fail count on success
         else
-            echo "Gagal mendapatkan koneksi ke $HOST, auto restart modem lewat /usr/bin/hilink iphunter"
-            # Kill previous instances of this script
-            PIDS=$(pgrep -f "$SCRIPT_NAME ${HOSTS[*]}")
-            for PID in $PIDS; do
-                if [[ $PID != $$ ]]; then
-                    echo "Killing previous instance of $SCRIPT_NAME with PID $PID"
-                    kill -9 $PID
-                fi
-            done
-            # Run /usr/bin/hilink iphunter until ping is successful again
-            until ping -c 1 $HOST &> /dev/null; do
+            FAIL_COUNT=$((FAIL_COUNT + 1))
+            echo "Gagal mendapatkan koneksi ke $HOST ($FAIL_COUNT/3)"
+            if [[ $FAIL_COUNT -ge 3 ]]; then
+                echo "Koneksi ke $HOST gagal tiga kali berturut-turut, auto restart modem lewat /usr/bin/hilink iphunter"
                 /usr/bin/hilink iphunter
-                sleep 120
-            done
-            echo "Berhasil terhubung ke $HOST. Menjalankan ping kembali"
+                FAIL_COUNT=0 # Reset fail count after restart
+            fi
         fi
+        sleep 1
     done
-    sleep 1
+}
+
+for HOST in "${HOSTS[@]}"; do
+    ping_host "$HOST" &
 done
+
+wait
