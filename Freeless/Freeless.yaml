@@ -1,4 +1,4 @@
-#Update per 18 Oct 2024 20.18
+#Update per 15 Jan 2025 10.04
 port: 7890
 socks-port: 7891
 redir-port: 7892
@@ -151,99 +151,63 @@ dns:
   - "+.v6.army"
 
 proxies:
-  - name: 🇮🇩 SI BIRU XCP WS
-    server: cvs-deo.shopeemobile.com
+  - name: 🇮🇩 SI BIRU XCV WS
+    server: xcv.buggg.v6.army
     port: 443
     type: vless
-    uuid: 524a671f-c6a1-42cb-bc55-976970623017
+    uuid: e64b8b66-80f5-4074-9e55-ea32d24c095e
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: vless-free4u.pages.dev
+    servername: v.asharirhmn.com
     network: ws
     ws-opts:
-      path: /vip
+      path: /ID3
       headers:
-        Host: vless-free4u.pages.dev
-    udp: true
-
-  - name: 🇮🇩 SI BIRU XCP 2 WS
-    server: cf.shopee.co.id
-    port: 443
-    type: vless
-    uuid: 524a671f-c6a1-42cb-bc55-976970623017
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: vless-free4u.pages.dev
-    network: ws
-    ws-opts:
-      path: /vip
-      headers:
-        Host: vless-free4u.pages.dev
+        Host: v.asharirhmn.com
     udp: true
     
   - name: 🇮🇩 SI BIRU VIDIO WS
     server: vid.buggg.v6.army
     port: 443
     type: vless
-    uuid: 524a671f-c6a1-42cb-bc55-976970623017
+    uuid: e64b8b66-80f5-4074-9e55-ea32d24c095e
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: vless-free4u.pages.dev
+    servername: v.asharirhmn.com
     network: ws
     ws-opts:
-      path: /vip
+      path: /ID3
       headers:
-        Host: vless-free4u.pages.dev
-    udp: true
-
-  - name: 🇮🇩 SI BIRU VISION WS
-    server: 104.18.226.52
-    port: 443
-    type: vless
-    uuid: 524a671f-c6a1-42cb-bc55-976970623017
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: vless-free4u.pages.dev
-    network: ws
-    ws-opts:
-      path: /vip
-      headers:
-        Host: vless-free4u.pages.dev
+        Host: v.asharirhmn.com
     udp: true
     
   - name: 🇮🇩 SI MERAH ILPED WS
     server: 104.26.6.171
     port: 443
     type: vless
-    uuid: 524a671f-c6a1-42cb-bc55-976970623017
+    uuid: e64b8b66-80f5-4074-9e55-ea32d24c095e
     alterId: 0
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: vless-free4u.pages.dev
+    servername: v.asharirhmn.com
     network: ws
     ws-opts:
-      path: /vip
+      path: /ID3
       headers:
-        Host: vless-free4u.pages.dev
+        Host: v.asharirhmn.com
     udp: true
 
 proxy-groups:
   - name: ASHARIRHMN 🇮🇩 FREELESS
     type: load-balance
     proxies:
-      - 🇮🇩 SI BIRU XCP WS
-      - 🇮🇩 SI BIRU XCP 2 WS
+      - 🇮🇩 SI BIRU XCV WS
       - 🇮🇩 SI BIRU VIDIO WS
-      - 🇮🇩 SI BIRU VISION WS
       - 🇮🇩 SI MERAH ILPED WS
 
 rules:
