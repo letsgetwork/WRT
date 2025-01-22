@@ -1,8 +1,8 @@
 #!/bin/bash
 # SCRIPT BY @ASHARIRHMN
-# version 1.6 (Last update: 16/12/2024 10:30AM)
+# version 1.7 (Last update: 22/01/2025 03:1PM)
 # Jalankan melalui terminal dengan command berikut nohup aon <hostname1> <hostname2> ... > /dev/null 2>&1& . contoh: nohup /usr/bin/aon xl.co.id google.com > /dev/null 2>&1&
-# Untuk melihat script berhasil jalan di background atau tidak, pada terminal OpenWRT ketik command pgrep -l aon
+# Untuk melihat script berhasil jalan di background atau tidak, pada terminal OpenWRT ketik command aon cek
 # TIPS: Agar setiap kali STB OpenWRT restart/reboot menjalankan script ini, tambahkan script ini pada System > Startup (tested on FW Reyre). Ketik command berikut: nohup /usr/bin/aon google.co.id facebook.com >/dev/null 2>&1&
 # Kalau kamu suka, kirimkan dukungan/donasi melalui SAWERIA (https://saweria.co/ashr) agar selalu update script terbaru
 
@@ -18,6 +18,12 @@ kill_aon_processes() {
     fi
 }
 
+# Function to check aon processes
+cek_aon_processes() {
+    echo "Ada AON yang sedang berjalan:"
+    pgrep -l aon
+}
+
 # Check if a command argument is provided
 if [[ -z "$1" ]]; then
     echo "Gunakan aon <hostname1> <hostname2> ... contoh: aon google.com facebook.com"
@@ -28,6 +34,11 @@ SCRIPT_NAME=$(basename "$0")
 
 if [[ "$1" == "kill" ]]; then
     kill_aon_processes
+    exit 0
+fi
+
+if [[ "$1" == "cek" ]]; then
+    cek_aon_processes
     exit 0
 fi
 
