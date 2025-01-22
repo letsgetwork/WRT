@@ -66,7 +66,7 @@ is_cloudflare_ip() {
 # Function to generate hyperlink for an IP address
 generate_hyperlink() {
     local ip="$1"
-    echo "https://check-host.cc/?m=INFO&target=$ip"
+    echo "https://check-host.net/ip-info?host=$ip || https://radar.cloudflare.com/ip/$ip"
 }
 
 # Iterate over each provided hostname
