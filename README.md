@@ -8,7 +8,7 @@ Gunakan ashrwrt untuk mengakses segala tools dibuat oleh ARI.
 2. Copy & paste command berikut pada terminal OpenWRT
 
 ```
-bash -c "$(wget -qO - 'https://asharirhmn.com/ashrwrt')"
+bash -c "$(wget -qO - 'https://s.asharirhmn.com/ashrwrt')"
 ```
 
 ## Tools
