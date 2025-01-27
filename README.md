@@ -22,5 +22,4 @@ bash -c "$(wget -qO - 'https://s.asharirhmn.com/ashrwrt')"
 
 ------------------------------
 Kalau kamu suka/menemukan error hubungi ARI via:
-- [EMAIL](mailto:hi@asharirhmn.com)
 - [TELEGRAM](https://t.me/asharirhmn) 
