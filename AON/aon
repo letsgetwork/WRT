@@ -1,5 +1,5 @@
 #!/bin/bash
-# SCRIPT BY @ASHARIRHMN
+# SCRIPT BY @ASHARIRHMN // Last Update: 08.50 WITA
 
 # Function to kill all aon processes
 kill_aon_processes() {
@@ -76,6 +76,8 @@ ping_host() {
             if [[ $FAIL_COUNT -ge 3 ]]; then
                 echo "Koneksi ke $HOST gagal tiga kali berturut-turut, auto restart modem lewat /usr/bin/hilink iphunter"
                 /usr/bin/hilink iphunter
+                service openclash start
+                sleep 15
                 FAIL_COUNT=0 # Reset fail count after restart
             fi
         fi
