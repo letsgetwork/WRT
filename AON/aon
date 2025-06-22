@@ -1,5 +1,5 @@
 #!/bin/bash
-# SCRIPT BY @ASHARIRHMN // Last Update: 08.50 WITA
+# SCRIPT BY @ASHARIRHMN
 
 # Function to kill all aon processes
 kill_aon_processes() {
@@ -26,7 +26,7 @@ if [[ -z "$1" ]]; then
     clear
     echo "++++++++++++++++++++++++++++++++++++"
     echo "AON by ASHRWRT @asharirhmn"
-    echo "Last update: 30/05/2025 09:35AM"
+    echo "Last update: 22/06/2025 08:30AM"
     echo "++++++++++++++++++++++++++++++++++++"
     echo ""
     echo "
