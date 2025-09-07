@@ -1,3 +1,5 @@
-payload:  
-    # TV
-  #  - DOMAIN-SUFFIX,dens.tv
+payload:
+# TV
+- DOMAIN-SUFFIX,dens.tv
+- DOMAIN-SUFFIX,whatsapp.com
+- DOMAIN-KEYWORD,whatsapp
