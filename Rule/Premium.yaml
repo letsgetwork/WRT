@@ -1,9 +1,9 @@
 payload:
 # TV, Socmed
-# DOMAIN-SUFFIX,dens.tv
-# DOMAIN-SUFFIX,whatsapp.com
-# DOMAIN-KEYWORD,whatsapp
-# DOMAIN-KEYWORD,telegram
+- DOMAIN-SUFFIX,dens.tv
+- DOMAIN-SUFFIX,whatsapp.com
+- DOMAIN-KEYWORD,whatsapp
+- DOMAIN-KEYWORD,telegram
 # DOMAIN-KEYWORD,karmakurama
-# DOMAIN-KEYWORD,tvri
+- DOMAIN-KEYWORD,tvri
 # DOMAIN-KEYWORD,bilibili
