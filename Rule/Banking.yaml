@@ -1,6 +1,8 @@
 payload:  
     # Banking/e-wallet/goverment
     - DOMAIN-KEYWORD,gopay
+    - DOMAIN-KEYWORD,airpay
+    - DOMAIN-KEYWORD,alipay
     - DOMAIN-KEYWORD,jago
     - DOMAIN-KEYWORD,bank
     - DOMAIN-KEYWORD,cimb
