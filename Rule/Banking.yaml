@@ -1,12 +1,13 @@
 payload:  
     # Banking/e-wallet/goverment
     # DOMAIN-SUFFIX,gopayapi.com
+    - DOMAIN-KEYWORD,bank
     - DOMAIN-SUFFIX,bpjsketenagakerjaan.go.id
     - DOMAIN-SUFFIX,jago.com
     - DOMAIN-SUFFIX,jago-realtime.ably.io
     - DOMAIN-SUFFIX,ably.io
-    # DOMAIN-SUFFIX,seabank.co.id
-    - DOMAIN-SUFFIX,klikbca.com
+    # DOMAIN-KEYWORD,seabank
+    - DOMAIN-KEYWORD,klikbca
     - DOMAIN-SUFFIX,dana.id
     - DOMAIN-SUFFIX,dana.ebuckler.com
     - DOMAIN-SUFFIX,aladinbank.id
