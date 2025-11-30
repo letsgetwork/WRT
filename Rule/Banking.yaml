@@ -1,16 +1,20 @@
 payload:  
     # Banking/e-wallet/goverment
-    # DOMAIN-SUFFIX,gopayapi.com
+    # DOMAIN-KEYWORD,gopay
     - DOMAIN-KEYWORD,bank
     - DOMAIN-KEYWORD,cimb
     - DOMAIN-KEYWORD,mizuho
     - DOMAIN-KEYWORD,bpjs
+    - DOMAIN-KEYWORD,btpn
+    - DOMAIN-KEYWORD,jenius
     - DOMAIN-KEYWORD,dbs
     - DOMAIN-KEYWORD,mandiri
     - DOMAIN-KEYWORD,syariah
     - DOMAIN-KEYWORD,bca
-    - DOMAIN-SUFFIX,ably.io
+    - DOMAIN-KEYWORD,bni
+    - DOMAIN-KEYWORD,danamon
     # DOMAIN-KEYWORD,seabank
+    - DOMAIN-SUFFIX,ably.io
     - DOMAIN-SUFFIX,dana.id
     - DOMAIN-SUFFIX,dana.ebuckler.com
     - DOMAIN-SUFFIX,aladinbank.id
