@@ -10,8 +10,9 @@ payload:
 - DOMAIN-KEYWORD,bilibili
 - DOMAIN-KEYWORD,ntp
 
-# Whatsapp port/rule
 - DOMAIN-KEYWORD,telegram
+
+# Whatsapp port/rule
 - DOMAIN-SUFFIX,whatsapp.com
 - DOMAIN-KEYWORD,whatsapp
 - DST-PORT,3478
