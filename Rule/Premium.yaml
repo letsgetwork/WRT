@@ -1,15 +1,17 @@
 payload:
+# IPTV/VOD Lokal
 - DOMAIN-SUFFIX,dens.tv
-- DOMAIN-SUFFIX,whatsapp.com
-- DOMAIN-KEYWORD,whatsapp
 - DOMAIN-KEYWORD,dens
-- DOMAIN-KEYWORD,telegram
 - DOMAIN-KEYWORD,karmakurama
 - DOMAIN-KEYWORD,tvri
-- DOMAIN-KEYWORD,bilibili
-- DOMAIN-KEYWORD,ntp
-  # Whatsapp port for Call
-- DST-PORT,3478
 # DOMAIN-KEYWORD,indihometv
 # DOMAIN-KEYWORD,cloudfront
 # DOMAIN-KEYWORD,visionplus
+- DOMAIN-KEYWORD,bilibili
+- DOMAIN-KEYWORD,ntp
+
+# Whatsapp port/rule
+- DOMAIN-KEYWORD,telegram
+- DOMAIN-SUFFIX,whatsapp.com
+- DOMAIN-KEYWORD,whatsapp
+- DST-PORT,3478
