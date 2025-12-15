@@ -8,6 +8,7 @@ payload:
 - DOMAIN-KEYWORD,tvri
 - DOMAIN-KEYWORD,bilibili
 - DOMAIN-KEYWORD,ntp
+  # Whatsapp port for Call
 - DST-PORT,3478
 # DOMAIN-KEYWORD,indihometv
 # DOMAIN-KEYWORD,cloudfront
