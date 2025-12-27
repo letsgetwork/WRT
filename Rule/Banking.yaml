@@ -1,5 +1,6 @@
 payload:  
-    # Banking/e-wallet/goverment
+    # Banking/e-wallet/goverment/cctv
+    - DST-PORT,7788
     - DOMAIN-KEYWORD,gopay
     - DOMAIN-KEYWORD,cmf
     - DOMAIN-KEYWORD,linkaja
