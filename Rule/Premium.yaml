@@ -10,6 +10,7 @@ payload:
 - DOMAIN-KEYWORD,bilibili
 - DOMAIN-KEYWORD,ntp
 - DOMAIN-KEYWORD,gitlab
+- IP-CIDR,202.80.220.0/22
 
 # Telegram
 - DOMAIN-SUFFIX,api.telegram.org
