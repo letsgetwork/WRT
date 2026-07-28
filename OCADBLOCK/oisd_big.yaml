@@ -1,9 +1,9 @@
-# Version: 202607281911
+# Version: 202607282105
 # Title: oisd big
 # Description: Block. Don't break.
 # Syntax: Domains (wildcards)
-# Entries: 337085
-# Last modified: 2026-07-28T19:11:04+0000
+# Entries: 337092
+# Last modified: 2026-07-28T21:05:31+0000
 # Expires: 1 hours
 # License: https://github.com/sjhgvr/oisd/blob/main/LICENSE
 # Maintainer: Stephan van Ruth
@@ -25181,6 +25181,7 @@ payload:
   - DOMAIN-SUFFIX,allegrolokalnie.lokalna-49382.sbs
   - DOMAIN-SUFFIX,allegrolokalnie.lokalna-67382.sbs
   - DOMAIN-SUFFIX,allegrolokalnie.lokalna-81231.shop
+  - DOMAIN-SUFFIX,allegrolokalnie.lokalna-9112.shop
   - DOMAIN-SUFFIX,allegrolokalnie.lokalna-93012.sbs
   - DOMAIN-SUFFIX,allegrolokalnie.lokalna-ofera634002.shop
   - DOMAIN-SUFFIX,allegrolokalnie.lokalna-ofera89348348.shop
@@ -41536,6 +41537,7 @@ payload:
   - DOMAIN-SUFFIX,ban.zab.ru
   - DOMAIN-SUFFIX,ban88.bet
   - DOMAIN-SUFFIX,bana9283.eu.cc
+  - DOMAIN-SUFFIX,bana9283.my.id
   - DOMAIN-SUFFIX,banabikilif.com
   - DOMAIN-SUFFIX,banagosweak.cyou
   - DOMAIN-SUFFIX,banalbjar.com
@@ -48086,6 +48088,7 @@ payload:
   - DOMAIN-SUFFIX,bispacleo.com.br
   - DOMAIN-SUFFIX,bisquavella.top
   - DOMAIN-SUFFIX,bisque-bison-333202.hostingersite.com
+  - DOMAIN-SUFFIX,bisque-chelsea.shop
   - DOMAIN-SUFFIX,bisrtb.vidazoo.com
   - DOMAIN-SUFFIX,bissbase.ru
   - DOMAIN-SUFFIX,bissellfrance.fr
@@ -148194,6 +148197,7 @@ payload:
   - DOMAIN-SUFFIX,inhabitantparticipation.com
   - DOMAIN-SUFFIX,inhabitantsevaluationsoy.com
   - DOMAIN-SUFFIX,inhabitedgangoppose.com
+  - DOMAIN-SUFFIX,inhardemer.cyou
   - DOMAIN-SUFFIX,inherefullom.com
   - DOMAIN-SUFFIX,inherentdecide.com
   - DOMAIN-SUFFIX,inheritance-law.info
@@ -213563,6 +213567,7 @@ payload:
   - DOMAIN-SUFFIX,ovanglobal.com
   - DOMAIN-SUFFIX,ovantfaits.com
   - DOMAIN-SUFFIX,ovardu.com
+  - DOMAIN-SUFFIX,ovaricondi.cyou
   - DOMAIN-SUFFIX,ovaridispr.cyou
   - DOMAIN-SUFFIX,ovaro.shop
   - DOMAIN-SUFFIX,ovbdckecb.com
@@ -264606,6 +264611,7 @@ payload:
   - DOMAIN-SUFFIX,sincorder.store
   - DOMAIN-SUFFIX,sincorrabtcv8.pro
   - DOMAIN-SUFFIX,sincorrabtcv85.org
+  - DOMAIN-SUFFIX,sincrsegno.cyou
   - DOMAIN-SUFFIX,sindbadapi.net
   - DOMAIN-SUFFIX,sinder8.com
   - DOMAIN-SUFFIX,sindevil.com
@@ -309298,6 +309304,7 @@ payload:
   - DOMAIN-SUFFIX,verblyad.store
   - DOMAIN-SUFFIX,verbodoavivamento.org.br
   - DOMAIN-SUFFIX,verbouwblog.com
+  - DOMAIN-SUFFIX,verbsbddierpoaldop.site
   - DOMAIN-SUFFIX,verbsponsor.com
   - DOMAIN-SUFFIX,verbwarilyclotted.com
   - DOMAIN-SUFFIX,vercadix.net
