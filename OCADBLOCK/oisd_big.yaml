@@ -1,9 +1,9 @@
-# Version: 202608030206
+# Version: 202608030306
 # Title: oisd big
 # Description: Block. Don't break.
 # Syntax: Domains (wildcards)
-# Entries: 429887
-# Last modified: 2026-08-03T02:06:01+0000
+# Entries: 429885
+# Last modified: 2026-08-03T03:06:02+0000
 # Expires: 1 hours
 # License: https://github.com/sjhgvr/oisd/blob/main/LICENSE
 # Maintainer: Stephan van Ruth
@@ -144052,8 +144052,6 @@ payload:
   - DOMAIN-SUFFIX,finkstudio.shop
   - DOMAIN-SUFFIX,finkulrontix.org
   - DOMAIN-SUFFIX,finkurs.digital
-  - DOMAIN-SUFFIX,finlab7-a47.sbs
-  - DOMAIN-SUFFIX,finlab8-fugiat36.sbs
   - DOMAIN-SUFFIX,finland.nport.link
   - DOMAIN-SUFFIX,finlandpalm.com
   - DOMAIN-SUFFIX,finldab.digital
