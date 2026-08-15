@@ -1,9 +1,9 @@
-# Version: 202608150304
+# Version: 202608150610
 # Title: oisd big
 # Description: Block. Don't break.
 # Syntax: Domains (wildcards)
-# Entries: 266523
-# Last modified: 2026-08-15T03:04:38+0000
+# Entries: 266535
+# Last modified: 2026-08-15T06:10:57+0000
 # Expires: 1 hours
 # License: https://github.com/sjhgvr/oisd/blob/main/LICENSE
 # Maintainer: Stephan van Ruth
@@ -7771,6 +7771,7 @@ payload:
   - DOMAIN-SUFFIX,9e0917xf7x.com
   - DOMAIN-SUFFIX,9e11ec3a56.com
   - DOMAIN-SUFFIX,9e1b47e1b9.com
+  - DOMAIN-SUFFIX,9e23f750.pinme.dev
   - DOMAIN-SUFFIX,9e50af.icefactory.cl
   - DOMAIN-SUFFIX,9e628dc697b3b9.lhr.life
   - DOMAIN-SUFFIX,9e83087e91.com
@@ -19161,6 +19162,7 @@ payload:
   - DOMAIN-SUFFIX,allegrolokalnie.oferta-2451784.cfd
   - DOMAIN-SUFFIX,allegrolokalnie.oferta-247157.cfd
   - DOMAIN-SUFFIX,allegrolokalnie.oferta-5349214-fast.click
+  - DOMAIN-SUFFIX,allegrolokalnie.oferta-748211.cfd
   - DOMAIN-SUFFIX,allegrolokalnie.oferta-854392-szybki.click
   - DOMAIN-SUFFIX,allegrolokalnie.oferta-873214.cfd
   - DOMAIN-SUFFIX,allegrolokalnie.oferta-lokalana6899824312.top
@@ -90042,6 +90044,7 @@ payload:
   - DOMAIN-SUFFIX,fisirolesuaryzu.info
   - DOMAIN-SUFFIX,fiskaqqjajwqv.website
   - DOMAIN-SUFFIX,fissa.work
+  - DOMAIN-SUFFIX,fissajnet.site
   - DOMAIN-SUFFIX,fission-drive.com
   - DOMAIN-SUFFIX,fission-haze.com
   - DOMAIN-SUFFIX,fission-spark.com
@@ -116471,6 +116474,7 @@ payload:
   - DOMAIN-SUFFIX,infersardine.com
   - DOMAIN-SUFFIX,infhiker.com
   - DOMAIN-SUFFIX,infhkkh.cyou
+  - DOMAIN-SUFFIX,infiabacce.store
   - DOMAIN-SUFFIX,infibroker.com
   - DOMAIN-SUFFIX,infidilayer.site
   - DOMAIN-SUFFIX,infieribra.rest
@@ -117018,6 +117022,7 @@ payload:
   - DOMAIN-SUFFIX,ingsecusecuring.firebaseapp.com
   - DOMAIN-SUFFIX,ingsecusecuring.web.app
   - DOMAIN-SUFFIX,ingszlmcsuwyu.site
+  - DOMAIN-SUFFIX,ingurregur.store
   - DOMAIN-SUFFIX,ingvar2000.no-ip.org
   - DOMAIN-SUFFIX,inhabitantparticipation.com
   - DOMAIN-SUFFIX,inhabitantsevaluationsoy.com
@@ -122466,6 +122471,7 @@ payload:
   - DOMAIN-SUFFIX,jitsu.ixbt.games
   - DOMAIN-SUFFIX,jitsu.ixbt.site
   - DOMAIN-SUFFIX,jitsu.www1.ru
+  - DOMAIN-SUFFIX,jittegregn.rest
   - DOMAIN-SUFFIX,jitterendeavour.com
   - DOMAIN-SUFFIX,jitterjourneycottage.com
   - DOMAIN-SUFFIX,jitterspauperusher.com
@@ -151848,6 +151854,7 @@ payload:
   - DOMAIN-SUFFIX,murderassuredness.com
   - DOMAIN-SUFFIX,murdereradffrenochromes.info
   - DOMAIN-SUFFIX,murexidunivied.com
+  - DOMAIN-SUFFIX,murexli.shop
   - DOMAIN-SUFFIX,murflek.shop
   - DOMAIN-SUFFIX,murijkaxuryhf7.weebly.com
   - DOMAIN-SUFFIX,murkena.cyou
@@ -159665,6 +159672,7 @@ payload:
   - DOMAIN-SUFFIX,nourish-and-heal.com
   - DOMAIN-SUFFIX,nourishmentdivorcedflock.com
   - DOMAIN-SUFFIX,nourishmenttrivialfiasco.com
+  - DOMAIN-SUFFIX,nouristaws.store
   - DOMAIN-SUFFIX,nouriture.com.au
   - DOMAIN-SUFFIX,nourix-avis-forum.fr
   - DOMAIN-SUFFIX,nourix-avis.fr
@@ -192940,6 +192948,7 @@ payload:
   - DOMAIN-SUFFIX,riadenieinvestez-sk.com
   - DOMAIN-SUFFIX,riadouzinarimal.com
   - DOMAIN-SUFFIX,riamiavid.com
+  - DOMAIN-SUFFIX,riammrebil.rest
   - DOMAIN-SUFFIX,riamotorsbh.com
   - DOMAIN-SUFFIX,rianajones.shop
   - DOMAIN-SUFFIX,riaoz.xyz
@@ -202891,6 +202900,7 @@ payload:
   - DOMAIN-SUFFIX,sephora-sale.shop
   - DOMAIN-SUFFIX,sephora-sale.top
   - DOMAIN-SUFFIX,sephorabeauty.com
+  - DOMAIN-SUFFIX,sephoracalendar.hiringmeeting.com
   - DOMAIN-SUFFIX,sephoracnd.shop
   - DOMAIN-SUFFIX,sephorajobs.com
   - DOMAIN-SUFFIX,sephoraonlinesaleus.com
@@ -225984,6 +225994,7 @@ payload:
   - DOMAIN-SUFFIX,teveofrancestore.fr
   - DOMAIN-SUFFIX,teveoproducts.com
   - DOMAIN-SUFFIX,teveqplzri.click
+  - DOMAIN-SUFFIX,teveqplzri.help
   - DOMAIN-SUFFIX,teverjpknq.click
   - DOMAIN-SUFFIX,teverqvmlh.shop
   - DOMAIN-SUFFIX,teverxmjnc.click
@@ -245295,6 +245306,7 @@ payload:
   - DOMAIN-SUFFIX,vinted.form129321.cfd
   - DOMAIN-SUFFIX,vinted.form5426131.cfd
   - DOMAIN-SUFFIX,vinted.form83613.cfd
+  - DOMAIN-SUFFIX,vinted.form954829.cfd
   - DOMAIN-SUFFIX,vinted.formupdate.help
   - DOMAIN-SUFFIX,vinted.id2453321432.help
   - DOMAIN-SUFFIX,vinted.id375829.cfd
