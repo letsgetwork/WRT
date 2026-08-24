@@ -1,9 +1,9 @@
-# Version: 202608232105
+# Version: 202608240004
 # Title: oisd big
 # Description: Block. Don't break.
 # Syntax: Domains (wildcards)
-# Entries: 268154
-# Last modified: 2026-08-23T21:05:15+0000
+# Entries: 268171
+# Last modified: 2026-08-24T00:04:52+0000
 # Expires: 1 hours
 # License: https://github.com/sjhgvr/oisd/blob/main/LICENSE
 # Maintainer: Stephan van Ruth
@@ -10182,6 +10182,7 @@ payload:
   - DOMAIN-SUFFIX,acs.woolworths.com.au
   - DOMAIN-SUFFIX,acs00.weebly.com
   - DOMAIN-SUFFIX,acs4baichuan.m.taobao.com
+  - DOMAIN-SUFFIX,acs4design.com
   - DOMAIN-SUFFIX,acs86.com
   - DOMAIN-SUFFIX,acsbapp.com
   - DOMAIN-SUFFIX,acsboda.com
@@ -19057,6 +19058,7 @@ payload:
   - DOMAIN-SUFFIX,allegrolokalnie.8495025.lat
   - DOMAIN-SUFFIX,allegrolokalnie.858684345.shop
   - DOMAIN-SUFFIX,allegrolokalnie.8588912591.click
+  - DOMAIN-SUFFIX,allegrolokalnie.8767541.lat
   - DOMAIN-SUFFIX,allegrolokalnie.8897587181.click
   - DOMAIN-SUFFIX,allegrolokalnie.894129019041.click
   - DOMAIN-SUFFIX,allegrolokalnie.9125125.click
@@ -34413,6 +34415,7 @@ payload:
   - DOMAIN-SUFFIX,bemcaamvoli.com
   - DOMAIN-SUFFIX,bemefirst.herokuapp.com
   - DOMAIN-SUFFIX,bemireulling.com
+  - DOMAIN-SUFFIX,bemisdisfa.rest
   - DOMAIN-SUFFIX,bemmak.com
   - DOMAIN-SUFFIX,bemobcloud.com
   - DOMAIN-SUFFIX,bemobpath.com
@@ -90293,12 +90296,12 @@ payload:
   - DOMAIN-SUFFIX,fisio1-tempora48.sbs
   - DOMAIN-SUFFIX,fisio1-vel46.sbs
   - DOMAIN-SUFFIX,fisio3-ratione10.sbs
+  - DOMAIN-SUFFIX,fisio4-eos50.sbs
   - DOMAIN-SUFFIX,fisio4-non53.sbs
   - DOMAIN-SUFFIX,fisio5-sed54.sbs
-  - DOMAIN-SUFFIX,fisio5-ut32.sbs
+  - DOMAIN-SUFFIX,fisio6-id25.sbs
   - DOMAIN-SUFFIX,fisio7-unde31.sbs
   - DOMAIN-SUFFIX,fisio9-occaecati83.sbs
-  - DOMAIN-SUFFIX,fisio9-sapiente42.sbs
   - DOMAIN-SUFFIX,fisiotiburtina.com
   - DOMAIN-SUFFIX,fisirolesuaryzu.info
   - DOMAIN-SUFFIX,fiskaqqjajwqv.website
@@ -91929,6 +91932,7 @@ payload:
   - DOMAIN-SUFFIX,foliums.ru
   - DOMAIN-SUFFIX,folkandcurious.fr
   - DOMAIN-SUFFIX,folkeopplysningen.com
+  - DOMAIN-SUFFIX,folks.magneticbycifor.ro
   - DOMAIN-SUFFIX,folksaii.com
   - DOMAIN-SUFFIX,follow-insta.com
   - DOMAIN-SUFFIX,follow-sv.com
@@ -102591,6 +102595,7 @@ payload:
   - DOMAIN-SUFFIX,gppuzerpharma.com
   - DOMAIN-SUFFIX,gppzwoctbainp.online
   - DOMAIN-SUFFIX,gpr.hu
+  - DOMAIN-SUFFIX,gps4dxv.pics
   - DOMAIN-SUFFIX,gpsbyte.com
   - DOMAIN-SUFFIX,gpsdozor-pl.com
   - DOMAIN-SUFFIX,gpsite.cloud
@@ -132229,6 +132234,7 @@ payload:
   - DOMAIN-SUFFIX,latentpebble.com
   - DOMAIN-SUFFIX,later-analytics-reports.s3-accelerate.amazonaws.com
   - DOMAIN-SUFFIX,latergoody.com
+  - DOMAIN-SUFFIX,laterrashl.rest
   - DOMAIN-SUFFIX,latestairdrop.com
   - DOMAIN-SUFFIX,latestapps.wen.ru
   - DOMAIN-SUFFIX,latestfashiontrends.in.net
@@ -142080,6 +142086,7 @@ payload:
   - DOMAIN-SUFFIX,madnna.jp
   - DOMAIN-SUFFIX,madnna.net
   - DOMAIN-SUFFIX,madojoa.com
+  - DOMAIN-SUFFIX,madonipote.rest
   - DOMAIN-SUFFIX,madonnaball.com
   - DOMAIN-SUFFIX,madonnadelcarminegalatina.it
   - DOMAIN-SUFFIX,madoverpricey.com
@@ -144395,6 +144402,7 @@ payload:
   - DOMAIN-SUFFIX,mathads.com
   - DOMAIN-SUFFIX,mathandchessss.com
   - DOMAIN-SUFFIX,mathcountryside.com
+  - DOMAIN-SUFFIX,mathecaram.rest
   - DOMAIN-SUFFIX,mathematicsefficiencyburnt.com
   - DOMAIN-SUFFIX,mathematicshardenmixture.com
   - DOMAIN-SUFFIX,mathematicswhineconvene.com
@@ -157601,7 +157609,9 @@ payload:
   - DOMAIN-SUFFIX,nexorkai.digital
   - DOMAIN-SUFFIX,nexorkai.live
   - DOMAIN-SUFFIX,nexorkai.net
+  - DOMAIN-SUFFIX,nexorktrade.com
   - DOMAIN-SUFFIX,nexorrio-tradepro.net
+  - DOMAIN-SUFFIX,nexoryplatform.com
   - DOMAIN-SUFFIX,nexotronai.pro
   - DOMAIN-SUFFIX,nexotronaitrade.com
   - DOMAIN-SUFFIX,nexovatrix.com
@@ -164543,6 +164553,7 @@ payload:
   - DOMAIN-SUFFIX,olx.kmhxccf.com
   - DOMAIN-SUFFIX,olx.lokalna-32320.sbs
   - DOMAIN-SUFFIX,olx.lokalna-ofera589312.shop
+  - DOMAIN-SUFFIX,olx.lokalna-oferta4132687.lol
   - DOMAIN-SUFFIX,olx.lokalna-oferta839122.lol
   - DOMAIN-SUFFIX,olx.lokalna-ofeta3528509.shop
   - DOMAIN-SUFFIX,olx.lokalna-ofeta713.sbs
@@ -174888,6 +174899,7 @@ payload:
   - DOMAIN-SUFFIX,pixelpluses.com
   - DOMAIN-SUFFIX,pixelpronto.cloud
   - DOMAIN-SUFFIX,pixelpronto.online
+  - DOMAIN-SUFFIX,pixelprosemedia.com
   - DOMAIN-SUFFIX,pixelputty.de
   - DOMAIN-SUFFIX,pixelroot.my
   - DOMAIN-SUFFIX,pixels.afcdn.com
@@ -178192,6 +178204,7 @@ payload:
   - DOMAIN-SUFFIX,poppy-loafers.shop
   - DOMAIN-SUFFIX,poppyonmain.com
   - DOMAIN-SUFFIX,poppyquay.eu
+  - DOMAIN-SUFFIX,poppyselite.co.uk
   - DOMAIN-SUFFIX,poppysol.com
   - DOMAIN-SUFFIX,poppyy2wave.info
   - DOMAIN-SUFFIX,poprevenue.com
@@ -179200,6 +179213,7 @@ payload:
   - DOMAIN-SUFFIX,ppqcqmfcqye.com
   - DOMAIN-SUFFIX,ppqscealbqcii.online
   - DOMAIN-SUFFIX,ppresulesglkd.online
+  - DOMAIN-SUFFIX,pprgrp.co.uk
   - DOMAIN-SUFFIX,pprlvdxanzzjl.store
   - DOMAIN-SUFFIX,pprod.back2.market
   - DOMAIN-SUFFIX,pps-ace.com
@@ -179961,6 +179975,7 @@ payload:
   - DOMAIN-SUFFIX,prestigechauffeurs.com.au
   - DOMAIN-SUFFIX,prestigeclient.lovable.app
   - DOMAIN-SUFFIX,prestigeestimatemobile.com
+  - DOMAIN-SUFFIX,prestigefashion.co.uk
   - DOMAIN-SUFFIX,prestigegrading.com
   - DOMAIN-SUFFIX,prestigehackforghosts.dlcodes.com
   - DOMAIN-SUFFIX,prestigelevel.net
@@ -180025,6 +180040,7 @@ payload:
   - DOMAIN-SUFFIX,prettyhousesfamily.com
   - DOMAIN-SUFFIX,prettylearning.com
   - DOMAIN-SUFFIX,prettylittlethings.fr
+  - DOMAIN-SUFFIX,prettymeltdowns.co.uk
   - DOMAIN-SUFFIX,prettypeoplesread.com
   - DOMAIN-SUFFIX,prettytube.net
   - DOMAIN-SUFFIX,pretucen1vijayanand.thepierteam.com
@@ -180694,6 +180710,7 @@ payload:
   - DOMAIN-SUFFIX,pro1gg.info
   - DOMAIN-SUFFIX,pro2.godaddysites.com
   - DOMAIN-SUFFIX,pro24artransf.fr
+  - DOMAIN-SUFFIX,proacinc.com
   - DOMAIN-SUFFIX,proactiveosgb.shop
   - DOMAIN-SUFFIX,proactivereliabilit.github.io
   - DOMAIN-SUFFIX,proactivesaglik.shop
