@@ -1,9 +1,9 @@
-# Version: 202609162005
+# Version: 202609162306
 # Title: oisd big
 # Description: Block. Don't break.
 # Syntax: Domains (wildcards)
-# Entries: 246754
-# Last modified: 2026-09-16T20:05:26+0000
+# Entries: 246776
+# Last modified: 2026-09-16T23:06:15+0000
 # Expires: 1 hours
 # License: https://github.com/sjhgvr/oisd/blob/main/LICENSE
 # Maintainer: Stephan van Ruth
@@ -18195,6 +18195,7 @@ payload:
   - DOMAIN-SUFFIX,allegrolokalnie.kup-teraz-890285.pl
   - DOMAIN-SUFFIX,allegrolokalnie.kup-teraz-978143.pl
   - DOMAIN-SUFFIX,allegrolokalnie.kup-teraz51672pl.click
+  - DOMAIN-SUFFIX,allegrolokalnie.kupteraz.rest
   - DOMAIN-SUFFIX,allegrolokalnie.kzulbt3950165.shop
   - DOMAIN-SUFFIX,allegrolokalnie.lato-2026-55932.click
   - DOMAIN-SUFFIX,allegrolokalnie.lato-2026-5923.click
@@ -18264,9 +18265,11 @@ payload:
   - DOMAIN-SUFFIX,allegrolokalnie.oferta7259489.click
   - DOMAIN-SUFFIX,allegrolokalnie.oferta7262738382838371.biz
   - DOMAIN-SUFFIX,allegrolokalnie.oferta7432716.rest
+  - DOMAIN-SUFFIX,allegrolokalnie.oferta79301.lol
   - DOMAIN-SUFFIX,allegrolokalnie.oferta7979848.click
   - DOMAIN-SUFFIX,allegrolokalnie.oferta812751.cfd
   - DOMAIN-SUFFIX,allegrolokalnie.oferta828331pl.click
+  - DOMAIN-SUFFIX,allegrolokalnie.oferta83614.lol
   - DOMAIN-SUFFIX,allegrolokalnie.oferta841818.click
   - DOMAIN-SUFFIX,allegrolokalnie.oferta848184152.click
   - DOMAIN-SUFFIX,allegrolokalnie.oferta8487121.click
@@ -18313,6 +18316,7 @@ payload:
   - DOMAIN-SUFFIX,allegrolokalnie.pl-7382196.click
   - DOMAIN-SUFFIX,allegrolokalnie.pl-765432771zamowienie90939455.biz
   - DOMAIN-SUFFIX,allegrolokalnie.pl-82726927373zamowienie001626382822.rest
+  - DOMAIN-SUFFIX,allegrolokalnie.pl-8642.com
   - DOMAIN-SUFFIX,allegrolokalnie.pl-8724387287.biz
   - DOMAIN-SUFFIX,allegrolokalnie.pl-928265272event66241272.biz
   - DOMAIN-SUFFIX,allegrolokalnie.pl-aukcja.me
@@ -18322,6 +18326,7 @@ payload:
   - DOMAIN-SUFFIX,allegrolokalnie.pl-aukcja83472547.sbs
   - DOMAIN-SUFFIX,allegrolokalnie.pl-checkout72813.com
   - DOMAIN-SUFFIX,allegrolokalnie.pl-firmowe-28491.click
+  - DOMAIN-SUFFIX,allegrolokalnie.pl-h0153935293529oferta8371882638373.top
   - DOMAIN-SUFFIX,allegrolokalnie.pl-oferta-3465923.shop
   - DOMAIN-SUFFIX,allegrolokalnie.pl-oferta-3859645.shop
   - DOMAIN-SUFFIX,allegrolokalnie.pl-oferta-iphone-14-pro-256-gb-super-stan-srebrny.plas.qzz.io
@@ -18419,9 +18424,12 @@ payload:
   - DOMAIN-SUFFIX,allegrolokalnie.pl-ogloszenie6789233491.click
   - DOMAIN-SUFFIX,allegrolokalnie.pl-ogloszenie7489834822.click
   - DOMAIN-SUFFIX,allegrolokalnie.pl-ogloszenie9384323147.click
+  - DOMAIN-SUFFIX,allegrolokalnie.pl-ogloszenie9713810897.top
   - DOMAIN-SUFFIX,allegrolokalnie.pl-smart24.pl
+  - DOMAIN-SUFFIX,allegrolokalnie.pl-smart891981898122712919201.sbs
   - DOMAIN-SUFFIX,allegrolokalnie.pl-wfde.shop
   - DOMAIN-SUFFIX,allegrolokalnie.pl-zamow-oferta-4059212.sbs
+  - DOMAIN-SUFFIX,allegrolokalnie.pl29139.top
   - DOMAIN-SUFFIX,allegrolokalnie.pl344381639.click
   - DOMAIN-SUFFIX,allegrolokalnie.pl543.shop
   - DOMAIN-SUFFIX,allegrolokalnie.pl581562.shop
@@ -27162,6 +27170,7 @@ payload:
   - DOMAIN-SUFFIX,auvon-tradev28.com
   - DOMAIN-SUFFIX,auvriken-solmireth.org
   - DOMAIN-SUFFIX,auvrikensolmireth-app.com
+  - DOMAIN-SUFFIX,auvrikensolmireth-click.pages.dev
   - DOMAIN-SUFFIX,auvrikensolmireth.click
   - DOMAIN-SUFFIX,auvrikensolmirethtrade.com
   - DOMAIN-SUFFIX,auwhaumtoageeg.com
@@ -44558,6 +44567,7 @@ payload:
   - DOMAIN-SUFFIX,carvyre.com
   - DOMAIN-SUFFIX,carxxpophore.info
   - DOMAIN-SUFFIX,caryaward.com
+  - DOMAIN-SUFFIX,caryosalta.store
   - DOMAIN-SUFFIX,carytek.com
   - DOMAIN-SUFFIX,cas-ent-login.framer.website
   - DOMAIN-SUFFIX,cas-internet-user.framer.website
@@ -79707,6 +79717,7 @@ payload:
   - DOMAIN-SUFFIX,falcoware.com
   - DOMAIN-SUFFIX,faldrok.shop
   - DOMAIN-SUFFIX,falebrin.cyou
+  - DOMAIN-SUFFIX,falerattra.store
   - DOMAIN-SUFFIX,falesiarendivo.digital
   - DOMAIN-SUFFIX,falesiarendivo.net
   - DOMAIN-SUFFIX,falesiarendivo.org
@@ -104605,6 +104616,7 @@ payload:
   - DOMAIN-SUFFIX,id8237482374712374123.firebaseapp.com
   - DOMAIN-SUFFIX,id8237482374712374123.web.app
   - DOMAIN-SUFFIX,id841727.click
+  - DOMAIN-SUFFIX,id84199588571.cyou
   - DOMAIN-SUFFIX,id843827.click
   - DOMAIN-SUFFIX,id8457281.cfd
   - DOMAIN-SUFFIX,id8464837627.click
@@ -141219,6 +141231,7 @@ payload:
   - DOMAIN-SUFFIX,mythic-forest.com
   - DOMAIN-SUFFIX,mythic-previous.com
   - DOMAIN-SUFFIX,mythings.com
+  - DOMAIN-SUFFIX,mythoeserc.store
   - DOMAIN-SUFFIX,mytholhhogers.info
   - DOMAIN-SUFFIX,mythos-bochum.de
   - DOMAIN-SUFFIX,mythos-shroud.com
@@ -143898,6 +143911,7 @@ payload:
   - DOMAIN-SUFFIX,newgooglgecheckoutroundwebmailer-dpzcf6efmgzv.edgeone.dev
   - DOMAIN-SUFFIX,newgssipservicefr.firebaseapp.com
   - DOMAIN-SUFFIX,newgssipservicefr.web.app
+  - DOMAIN-SUFFIX,newguest-booking.com
   - DOMAIN-SUFFIX,newhambooks.co.uk
   - DOMAIN-SUFFIX,newhampure.us
   - DOMAIN-SUFFIX,newhomecfl.com
@@ -160220,6 +160234,7 @@ payload:
   - DOMAIN-SUFFIX,pl-alebilet.sbs
   - DOMAIN-SUFFIX,pl-avenirai.com
   - DOMAIN-SUFFIX,pl-bieznie.com
+  - DOMAIN-SUFFIX,pl-bilet.club
   - DOMAIN-SUFFIX,pl-bit.web.app
   - DOMAIN-SUFFIX,pl-btcsoulai.com
   - DOMAIN-SUFFIX,pl-bvci5.sbs
@@ -160247,10 +160262,12 @@ payload:
   - DOMAIN-SUFFIX,pl-focus.shop
   - DOMAIN-SUFFIX,pl-glurvextopinai.com
   - DOMAIN-SUFFIX,pl-glurvextopinai.net
+  - DOMAIN-SUFFIX,pl-gvjc6.sbs
   - DOMAIN-SUFFIX,pl-huda.myshopify.com
   - DOMAIN-SUFFIX,pl-i.shop
   - DOMAIN-SUFFIX,pl-i1i.shop
   - DOMAIN-SUFFIX,pl-id09798332.cfd
+  - DOMAIN-SUFFIX,pl-id956012.sbs
   - DOMAIN-SUFFIX,pl-idwx9.sbs
   - DOMAIN-SUFFIX,pl-invest2025.github.io
   - DOMAIN-SUFFIX,pl-kce6w.sbs
@@ -160380,8 +160397,10 @@ payload:
   - DOMAIN-SUFFIX,pl-ogloszenie-firmowe-84792192.click
   - DOMAIN-SUFFIX,pl-ogloszenie-firmowe-86231867.click
   - DOMAIN-SUFFIX,pl-ogloszenie-prywatne73636284.click
+  - DOMAIN-SUFFIX,pl-ogloszenie-prywatne7584645345532.click
   - DOMAIN-SUFFIX,pl-ogloszenie-prywatne763839477394.click
   - DOMAIN-SUFFIX,pl-ogloszenie-tadeuszkaraszewski-93.click
+  - DOMAIN-SUFFIX,pl-ogloszenie-tomaszadamski-93.sbs
   - DOMAIN-SUFFIX,pl-ogloszenie1298510263.click
   - DOMAIN-SUFFIX,pl-ogloszenie3640514098.top
   - DOMAIN-SUFFIX,pl-ogloszenie5128592891591.shop
@@ -161077,6 +161096,7 @@ payload:
   - DOMAIN-SUFFIX,plazaimmobilier.fr
   - DOMAIN-SUFFIX,plazeko.shop
   - DOMAIN-SUFFIX,plazentia-pro-ai.com
+  - DOMAIN-SUFFIX,plazentiapro-click.pages.dev
   - DOMAIN-SUFFIX,plazentiapro.click
   - DOMAIN-SUFFIX,plazentiapro.net
   - DOMAIN-SUFFIX,plbcyt.com
@@ -164639,7 +164659,6 @@ payload:
   - DOMAIN-SUFFIX,prestige-client.org
   - DOMAIN-SUFFIX,prestige-container.com
   - DOMAIN-SUFFIX,prestige-luxerise-app.com
-  - DOMAIN-SUFFIX,prestige-mc.lovable.app
   - DOMAIN-SUFFIX,prestigeapart.com
   - DOMAIN-SUFFIX,prestigechameleon.international
   - DOMAIN-SUFFIX,prestigechameleonint.com
@@ -173108,7 +173127,6 @@ payload:
   - DOMAIN-SUFFIX,r8yqaw.beer
   - DOMAIN-SUFFIX,r8yqaw.help
   - DOMAIN-SUFFIX,r8yqaw.ink
-  - DOMAIN-SUFFIX,r8z1qd.lat
   - DOMAIN-SUFFIX,r932o.com
   - DOMAIN-SUFFIX,r96041kf.beget.tech
   - DOMAIN-SUFFIX,r96h7g97rik8eq8ow.cfd
@@ -179481,6 +179499,7 @@ payload:
   - DOMAIN-SUFFIX,ronas.live
   - DOMAIN-SUFFIX,ronashoesdirect.shop
   - DOMAIN-SUFFIX,ronbigayut.com
+  - DOMAIN-SUFFIX,roncecapitecto-digital.pages.dev
   - DOMAIN-SUFFIX,roncecapitecto.digital
   - DOMAIN-SUFFIX,roncecapitecto.net
   - DOMAIN-SUFFIX,roncrib365.click
@@ -187820,6 +187839,7 @@ payload:
   - DOMAIN-SUFFIX,several-load.com
   - DOMAIN-SUFFIX,severaldietic.shop
   - DOMAIN-SUFFIX,severalsail.com
+  - DOMAIN-SUFFIX,severcacum.store
   - DOMAIN-SUFFIX,severe-copper-y92uxuu9.edgeone.dev
   - DOMAIN-SUFFIX,severendange.com
   - DOMAIN-SUFFIX,severendange.live
@@ -192621,6 +192641,7 @@ payload:
   - DOMAIN-SUFFIX,smyk-store.club
   - DOMAIN-SUFFIX,smyk-store.com
   - DOMAIN-SUFFIX,smyk.chytapust.shop
+  - DOMAIN-SUFFIX,smyk.lorvessa.sbs
   - DOMAIN-SUFFIX,smyk.velnivo.top
   - DOMAIN-SUFFIX,smykbaby.com
   - DOMAIN-SUFFIX,smykbabyoutlets.com
@@ -203421,7 +203442,6 @@ payload:
   - DOMAIN-SUFFIX,swiftfixissues.pages.dev
   - DOMAIN-SUFFIX,swiftflaremedia.com
   - DOMAIN-SUFFIX,swiftfundings.com
-  - DOMAIN-SUFFIX,swiftfusion.tech
   - DOMAIN-SUFFIX,swiftgforge.live
   - DOMAIN-SUFFIX,swiftindexchain.web.app
   - DOMAIN-SUFFIX,swiftintro.com
@@ -206429,7 +206449,6 @@ payload:
   - DOMAIN-SUFFIX,techsyslife.com
   - DOMAIN-SUFFIX,techsystems.xyz
   - DOMAIN-SUFFIX,techtalentafrica.xyz
-  - DOMAIN-SUFFIX,techtattva.in
   - DOMAIN-SUFFIX,techthinklab.net
   - DOMAIN-SUFFIX,techtosolution.com
   - DOMAIN-SUFFIX,techtulse-in.com
@@ -210383,6 +210402,7 @@ payload:
   - DOMAIN-SUFFIX,therichkids.com
   - DOMAIN-SUFFIX,therickabys.com
   - DOMAIN-SUFFIX,theritzygypsy.com
+  - DOMAIN-SUFFIX,therivieramatrixai.com
   - DOMAIN-SUFFIX,therma-lume.com
   - DOMAIN-SUFFIX,thermabuild.ie
   - DOMAIN-SUFFIX,thermaesyllaspa-hotel.com
@@ -215412,6 +215432,7 @@ payload:
   - DOMAIN-SUFFIX,travellingpresidentding.com
   - DOMAIN-SUFFIX,travellingprofessor.com
   - DOMAIN-SUFFIX,travelnr.com
+  - DOMAIN-SUFFIX,travelo-booking.com
   - DOMAIN-SUFFIX,travelowners.com
   - DOMAIN-SUFFIX,travelpackages.world
   - DOMAIN-SUFFIX,travelparadiso.net
@@ -222644,6 +222665,7 @@ payload:
   - DOMAIN-SUFFIX,uynukzlkdixye.site
   - DOMAIN-SUFFIX,uyotrasel-app.com
   - DOMAIN-SUFFIX,uyotrasel-belgium.com
+  - DOMAIN-SUFFIX,uyotrasel-click.pages.dev
   - DOMAIN-SUFFIX,uyotrasel-italy.com
   - DOMAIN-SUFFIX,uyotrasel-netherlands.com
   - DOMAIN-SUFFIX,uyotrasel-official.com
@@ -227527,6 +227549,7 @@ payload:
   - DOMAIN-SUFFIX,vkirtioitr.site
   - DOMAIN-SUFFIX,vkj9mko5efuminb135m.cfd
   - DOMAIN-SUFFIX,vkjiwgmipziva.space
+  - DOMAIN-SUFFIX,vkladera-pro.pages.dev
   - DOMAIN-SUFFIX,vkladera.pro
   - DOMAIN-SUFFIX,vkladoria-cz.com
   - DOMAIN-SUFFIX,vkladoria.digital
@@ -228682,7 +228705,6 @@ payload:
   - DOMAIN-SUFFIX,vrcholgainluxplatform.com
   - DOMAIN-SUFFIX,vrcplugin.com
   - DOMAIN-SUFFIX,vrcpluginhub.com
-  - DOMAIN-SUFFIX,vrdccbank.com
   - DOMAIN-SUFFIX,vrdiborg.com
   - DOMAIN-SUFFIX,vrecdsergtebg.com
   - DOMAIN-SUFFIX,vredebitmarktrade.com
